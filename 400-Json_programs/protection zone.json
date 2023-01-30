@@ -1,0 +1,156 @@
+{
+    "actions": [
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1
+            },
+            "next": {
+                "identifier": 879130370
+            },
+            "name": "Input",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "1"
+                },
+                "pluginHandle": {
+                    "identifier": ""
+                }
+            },
+            "configuration": null,
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 1,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 879130370
+            },
+            "next": {
+                "identifier": 0
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "waypoints"
+                },
+                "pluginHandle": {
+                    "identifier": "arm_plugin"
+                }
+            },
+            "configuration": {
+                "waypoint_list_options": {
+                    "type_of_waypoint_global": "Cartesian",
+                    "use_optimal_blending": true
+                },
+                "goto_options": {
+                    "option": 1,
+                    "waypoint_selection": "1"
+                },
+                "constraint": {
+                    "speed": {
+                        "tcp_translation": 0.25,
+                        "tcp_rotation": 150,
+                        "edit_all_joints_in_one": true,
+                        "single_joint": 60,
+                        "joints": [
+                            60,
+                            60,
+                            60,
+                            140,
+                            140,
+                            140
+                        ]
+                    },
+                    "acceleration": {
+                        "tcp_translation": 5,
+                        "tcp_rotation": 600,
+                        "edit_all_joints_in_one": true,
+                        "single_joint": 200,
+                        "joints": [
+                            200,
+                            200,
+                            200,
+                            400,
+                            400,
+                            400
+                        ]
+                    }
+                },
+                "custom_frame": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "thetaX": 0,
+                    "thetaY": 0,
+                    "thetaZ": 0
+                },
+                "waypoint_list": [
+                    {
+                        "index": "1",
+                        "name": "Waypoint #1",
+                        "type_of_waypoint": "Cartesian",
+                        "reference_frame": 3,
+                        "pose": {
+                            "x": 0.33,
+                            "y": 0.08871753513813019,
+                            "z": 0.3218195140361786,
+                            "thetaX": 0.24507954716682434,
+                            "thetaY": -176.86026000976562,
+                            "thetaZ": 91.77796936035156
+                        },
+                        "blending_radius": 0,
+                        "waypoint_speed_limits_toggle": false,
+                        "waypoint_acceleration_limits_toggle": false,
+                        "angles": [
+                            4.8454742431640625,
+                            36.274314880371094,
+                            135.76370239257812,
+                            2.5677642822265625,
+                            8.916740417480469,
+                            6.0765838623046875
+                        ],
+                        "blending_radius_angular": 0,
+                        "init": {
+                            "angles": [
+                                4.8454742431640625,
+                                36.274314880371094,
+                                135.76370239257812,
+                                2.5677642822265625,
+                                8.916740417480469,
+                                6.0765838623046875
+                            ],
+                            "pose": {
+                                "thetaX": 0.24507954716682434,
+                                "thetaY": -176.86026000976562,
+                                "thetaZ": 91.77796936035156,
+                                "x": 0.2834457457065582,
+                                "y": 0.08871753513813019,
+                                "z": 0.3218195140361786
+                            }
+                        }
+                    }
+                ]
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        }
+    ],
+    "variables": [],
+    "handle": {
+        "identifier": 61,
+        "permission": 7
+    },
+    "name": "protection zone",
+    "isValidated": true
+}
