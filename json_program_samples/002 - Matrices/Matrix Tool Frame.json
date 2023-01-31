@@ -1,0 +1,1240 @@
+{
+    "actions": [
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1
+            },
+            "next": {
+                "identifier": 196473740
+            },
+            "name": "Input",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "1"
+                },
+                "pluginHandle": {
+                    "identifier": ""
+                }
+            },
+            "configuration": null,
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 1,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 2043810074
+            },
+            "next": {
+                "identifier": 1676968909
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "matrix"
+                },
+                "pluginHandle": {
+                    "identifier": "arm_plugin"
+                }
+            },
+            "configuration": {
+                "grid": {
+                    "number_of_rows": 2,
+                    "number_of_columns": 2,
+                    "starting_point": 0,
+                    "traversal": 0
+                },
+                "stack": {
+                    "count": 1,
+                    "height": 0,
+                    "is_traversal_bottom_to_top": true
+                },
+                "origin": {
+                    "x": 0.674778401851654,
+                    "y": 0.01656225696206093,
+                    "z": 0.17,
+                    "thetaX": 4.276730060577393,
+                    "thetaY": -179.25311279296875,
+                    "thetaZ": 93.23789978027344
+                },
+                "x_last_pose_in_base": {
+                    "x": 0.6747791171073914,
+                    "y": -0.041847728192806244,
+                    "z": 0.17,
+                    "thetaX": 4.276712417602539,
+                    "thetaY": -179.2530975341797,
+                    "thetaZ": 93.23782348632812
+                },
+                "y_last_pose_in_base": {
+                    "x": 0.7245861291885376,
+                    "y": 0.01236120518296957,
+                    "z": 0.17,
+                    "thetaX": 4.276721000671387,
+                    "thetaY": -179.25308227539062,
+                    "thetaZ": 93.23778533935547
+                },
+                "computed_poses": [
+                    {
+                        "thetaX": 4.276730060577393,
+                        "thetaY": -179.25311279296875,
+                        "thetaZ": 93.23789978027344,
+                        "x": 0.674778401851654,
+                        "y": 0.01656225696206093,
+                        "z": 0.13611061871051788
+                    },
+                    {
+                        "thetaX": 4.276730060577393,
+                        "thetaY": -179.25311279296875,
+                        "thetaZ": 93.23789978027344,
+                        "x": 0.6747791171073914,
+                        "y": -0.041847728192806244,
+                        "z": 0.1361103057861328
+                    },
+                    {
+                        "thetaX": 4.276730060577393,
+                        "thetaY": -179.25311279296875,
+                        "thetaZ": 93.23789978027344,
+                        "x": 0.7245861291885376,
+                        "y": 0.01236120518296957,
+                        "z": 0.13611245155334473
+                    },
+                    {
+                        "thetaX": 4.276730060577393,
+                        "thetaY": -179.25311279296875,
+                        "thetaZ": 93.23789978027344,
+                        "x": 0.7245868444442749,
+                        "y": -0.04604877904057503,
+                        "z": 0.13611213862895966
+                    }
+                ]
+            },
+            "storeOutputTo": {
+                "identifier": "${matrixPrepick}",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1676968909
+            },
+            "next": {
+                "identifier": 1971055044
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "matrix"
+                },
+                "pluginHandle": {
+                    "identifier": "arm_plugin"
+                }
+            },
+            "configuration": {
+                "grid": {
+                    "number_of_rows": 2,
+                    "number_of_columns": 2,
+                    "starting_point": 0,
+                    "traversal": 0
+                },
+                "stack": {
+                    "count": 1,
+                    "height": 0,
+                    "is_traversal_bottom_to_top": true
+                },
+                "origin": {
+                    "x": 0.6809808611869812,
+                    "y": -0.15516339242458344,
+                    "z": 0.17,
+                    "thetaX": 4.276904582977295,
+                    "thetaY": -179.2530059814453,
+                    "thetaZ": 93.23780822753906
+                },
+                "x_last_pose_in_base": {
+                    "x": 0.6809797286987305,
+                    "y": -0.211173415184021,
+                    "z": 0.17,
+                    "thetaX": 4.276948928833008,
+                    "thetaY": -179.25299072265625,
+                    "thetaZ": 93.23779296875
+                },
+                "y_last_pose_in_base": {
+                    "x": 0.731986939907074,
+                    "y": -0.1501617580652237,
+                    "z": 0.17,
+                    "thetaX": 4.2769341468811035,
+                    "thetaY": -179.25299072265625,
+                    "thetaZ": 93.23778533935547
+                },
+                "computed_poses": [
+                    {
+                        "thetaX": 4.276904582977295,
+                        "thetaY": -179.2530059814453,
+                        "thetaZ": 93.23780822753906,
+                        "x": 0.6809808611869812,
+                        "y": -0.15516339242458344,
+                        "z": 0.1361137181520462
+                    },
+                    {
+                        "thetaX": 4.276904582977295,
+                        "thetaY": -179.2530059814453,
+                        "thetaZ": 93.23780822753906,
+                        "x": 0.6809797286987305,
+                        "y": -0.211173415184021,
+                        "z": 0.13611289858818054
+                    },
+                    {
+                        "thetaX": 4.276904582977295,
+                        "thetaY": -179.2530059814453,
+                        "thetaZ": 93.23780822753906,
+                        "x": 0.731986939907074,
+                        "y": -0.1501617580652237,
+                        "z": 0.13610997796058655
+                    },
+                    {
+                        "thetaX": 4.276904582977295,
+                        "thetaY": -179.2530059814453,
+                        "thetaZ": 93.23780822753906,
+                        "x": 0.7319858074188232,
+                        "y": -0.20617178082466125,
+                        "z": 0.1361091583967209
+                    }
+                ]
+            },
+            "storeOutputTo": {
+                "identifier": "${matrixPrepick2}",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [
+                {
+                    "identifier": 328573258
+                }
+            ],
+            "handle": {
+                "identifier": 1971055044
+            },
+            "next": {
+                "identifier": 1957434000
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "3"
+                },
+                "pluginHandle": {
+                    "identifier": ""
+                }
+            },
+            "configuration": {
+                "doAtLeastOnce": false,
+                "incrementer": {
+                    "variableIdentifier": "${index}"
+                },
+                "maxIterationCount": "${matrixPrepick.poses.length}",
+                "conditions": []
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 3,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 328573258
+            },
+            "next": {
+                "identifier": 74600646
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "waypoints"
+                },
+                "pluginHandle": {
+                    "identifier": "arm_plugin"
+                }
+            },
+            "configuration": {
+                "waypoint_list_options": {
+                    "type_of_waypoint_global": "Cartesian",
+                    "use_optimal_blending": true
+                },
+                "goto_options": {
+                    "option": 0
+                },
+                "constraint": {
+                    "speed": {
+                        "tcp_translation": 0.25,
+                        "tcp_rotation": 150,
+                        "edit_all_joints_in_one": true,
+                        "single_joint": 60,
+                        "joints": [
+                            60,
+                            60,
+                            60,
+                            140,
+                            140,
+                            140
+                        ]
+                    },
+                    "acceleration": {
+                        "tcp_translation": 5,
+                        "tcp_rotation": 600,
+                        "edit_all_joints_in_one": true,
+                        "single_joint": 200,
+                        "joints": [
+                            200,
+                            200,
+                            200,
+                            400,
+                            400,
+                            400
+                        ]
+                    }
+                },
+                "custom_frame": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "thetaX": 0,
+                    "thetaY": 0,
+                    "thetaZ": 0
+                },
+                "waypoint_list": [
+                    {
+                        "index": "1",
+                        "name": "Waypoint #1",
+                        "type_of_waypoint": "Cartesian",
+                        "reference_frame": 3,
+                        "pose": {
+                            "x": "${matrixPrepick.poses[${index}].x}",
+                            "y": "${matrixPrepick.poses[${index}].y}",
+                            "z": "${matrixPrepick.poses[${index}].z}",
+                            "thetaX": "${matrixPrepick.poses[${index}].thetaX}",
+                            "thetaY": "${matrixPrepick.poses[${index}].thetaY}",
+                            "thetaZ": "${matrixPrepick.poses[${index}].thetaZ}"
+                        },
+                        "blending_radius": 0,
+                        "waypoint_speed_limits_toggle": false,
+                        "waypoint_acceleration_limits_toggle": false,
+                        "angles": [
+                            22.60733413696289,
+                            -22.20975112915039,
+                            94.1753921508789,
+                            -0.8990631103515625,
+                            29.210472106933594,
+                            26.05010986328125
+                        ],
+                        "blending_radius_angular": 0,
+                        "init": {
+                            "angles": [
+                                22.60733413696289,
+                                -22.20975112915039,
+                                94.1753921508789,
+                                -0.8990631103515625,
+                                29.210472106933594,
+                                26.05010986328125
+                            ],
+                            "pose": {
+                                "thetaX": 4.2769341468811035,
+                                "thetaY": -179.25299072265625,
+                                "thetaZ": 93.23778533935547,
+                                "x": 0.731986939907074,
+                                "y": -0.1501617580652237,
+                                "z": 0.13610997796058655
+                            }
+                        }
+                    },
+                    {
+                        "index": "2",
+                        "name": "Waypoint #2",
+                        "type_of_waypoint": "Cartesian",
+                        "reference_frame": 2,
+                        "pose": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0.1,
+                            "thetaX": 0,
+                            "thetaY": 0,
+                            "thetaZ": 0
+                        },
+                        "blending_radius": 0,
+                        "waypoint_speed_limits_toggle": false,
+                        "waypoint_acceleration_limits_toggle": false,
+                        "angles": [
+                            22.60750961303711,
+                            -22.20956802368164,
+                            94.17572784423828,
+                            -0.898895263671875,
+                            29.210296630859375,
+                            26.05010986328125
+                        ],
+                        "blending_radius_angular": 0,
+                        "init": {
+                            "angles": [
+                                22.60750961303711,
+                                -22.20956802368164,
+                                94.17572784423828,
+                                -0.898895263671875,
+                                29.210296630859375,
+                                26.05010986328125
+                            ],
+                            "pose": {
+                                "thetaX": 4.2769341468811035,
+                                "thetaY": -179.25299072265625,
+                                "thetaZ": 93.23778533935547,
+                                "x": 0.731986939907074,
+                                "y": -0.1501617580652237,
+                                "z": 0.13610997796058655
+                            }
+                        }
+                    }
+                ]
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1447108595
+            },
+            "next": {
+                "identifier": 2114446849
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "waypoints"
+                },
+                "pluginHandle": {
+                    "identifier": "arm_plugin"
+                }
+            },
+            "configuration": {
+                "waypoint_list_options": {
+                    "type_of_waypoint_global": "Cartesian",
+                    "use_optimal_blending": true
+                },
+                "goto_options": {
+                    "option": 0
+                },
+                "constraint": {
+                    "speed": {
+                        "tcp_translation": 0.25,
+                        "tcp_rotation": 150,
+                        "edit_all_joints_in_one": true,
+                        "single_joint": 60,
+                        "joints": [
+                            60,
+                            60,
+                            60,
+                            140,
+                            140,
+                            140
+                        ]
+                    },
+                    "acceleration": {
+                        "tcp_translation": 5,
+                        "tcp_rotation": 600,
+                        "edit_all_joints_in_one": true,
+                        "single_joint": 200,
+                        "joints": [
+                            200,
+                            200,
+                            200,
+                            400,
+                            400,
+                            400
+                        ]
+                    }
+                },
+                "custom_frame": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "thetaX": 0,
+                    "thetaY": 0,
+                    "thetaZ": 0
+                },
+                "waypoint_list": [
+                    {
+                        "index": "1",
+                        "name": "Waypoint #1",
+                        "type_of_waypoint": "Cartesian",
+                        "reference_frame": 3,
+                        "pose": {
+                            "x": "${matrixPrepick.poses[${index}].x}",
+                            "y": "${matrixPrepick.poses[${index}].y}",
+                            "z": "${matrixPrepick.poses[${index}].z}",
+                            "thetaX": "${matrixPrepick.poses[${index}].thetaX}",
+                            "thetaY": "${matrixPrepick.poses[${index}].thetaY}",
+                            "thetaZ": "${matrixPrepick.poses[${index}].thetaZ}"
+                        },
+                        "blending_radius": 0,
+                        "waypoint_speed_limits_toggle": false,
+                        "waypoint_acceleration_limits_toggle": false,
+                        "angles": [
+                            22.564327239990234,
+                            -25.513111114501953,
+                            99.10848236083984,
+                            -1.067138671875,
+                            37.443817138671875,
+                            26.314788818359375
+                        ],
+                        "blending_radius_angular": 0,
+                        "init": {
+                            "angles": [
+                                22.564327239990234,
+                                -25.513111114501953,
+                                99.10848236083984,
+                                -1.067138671875,
+                                37.443817138671875,
+                                26.314788818359375
+                            ],
+                            "pose": {
+                                "thetaX": 4.276928901672363,
+                                "thetaY": -179.2530059814453,
+                                "thetaZ": 93.23778533935547,
+                                "x": 0.7319856286048889,
+                                "y": -0.15016335248947144,
+                                "z": 0.07830382883548737
+                            }
+                        }
+                    },
+                    {
+                        "index": "2",
+                        "name": "Waypoint #2",
+                        "type_of_waypoint": "Cartesian",
+                        "reference_frame": 3,
+                        "pose": {
+                            "x": "${matrixPrepick2.poses[${index}].x}",
+                            "y": "${matrixPrepick2.poses[${index}].y}",
+                            "z": "${matrixPrepick2.poses[${index}].z}",
+                            "thetaX": "${matrixPrepick2.poses[${index}].thetaX}",
+                            "thetaY": "${matrixPrepick2.poses[${index}].thetaY}",
+                            "thetaZ": "${matrixPrepick2.poses[${index}].thetaZ}"
+                        },
+                        "blending_radius": 0,
+                        "waypoint_speed_limits_toggle": false,
+                        "waypoint_acceleration_limits_toggle": false,
+                        "angles": [
+                            22.564327239990234,
+                            -25.513111114501953,
+                            99.10865020751953,
+                            -1.06732177734375,
+                            37.443992614746094,
+                            26.314605712890625
+                        ],
+                        "blending_radius_angular": 0,
+                        "init": {
+                            "angles": [
+                                22.564327239990234,
+                                -25.513111114501953,
+                                99.10865020751953,
+                                -1.06732177734375,
+                                37.443992614746094,
+                                26.314605712890625
+                            ],
+                            "pose": {
+                                "thetaX": 4.276928901672363,
+                                "thetaY": -179.2530059814453,
+                                "thetaZ": 93.23778533935547,
+                                "x": 0.7319856286048889,
+                                "y": -0.15016335248947144,
+                                "z": 0.07830382883548737
+                            }
+                        }
+                    },
+                    {
+                        "index": "3",
+                        "name": "Waypoint #3",
+                        "type_of_waypoint": "Cartesian",
+                        "reference_frame": 2,
+                        "pose": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0.1,
+                            "thetaX": 0,
+                            "thetaY": 0,
+                            "thetaZ": 0
+                        },
+                        "blending_radius": 0,
+                        "waypoint_speed_limits_toggle": false,
+                        "waypoint_acceleration_limits_toggle": false,
+                        "angles": [
+                            22.564502716064453,
+                            -25.513263702392578,
+                            99.10865020751953,
+                            -1.0674896240234375,
+                            37.443992614746094,
+                            26.314605712890625
+                        ],
+                        "blending_radius_angular": 0,
+                        "init": {
+                            "angles": [
+                                22.564502716064453,
+                                -25.513263702392578,
+                                99.10865020751953,
+                                -1.0674896240234375,
+                                37.443992614746094,
+                                26.314605712890625
+                            ],
+                            "pose": {
+                                "thetaX": 4.276928901672363,
+                                "thetaY": -179.2530059814453,
+                                "thetaZ": 93.23778533935547,
+                                "x": 0.7319856286048889,
+                                "y": -0.15016335248947144,
+                                "z": 0.07830382883548737
+                            }
+                        }
+                    }
+                ],
+                "tool_frame": {
+                    "thetaX": 4.276928901672363,
+                    "thetaY": -179.2530059814453,
+                    "thetaZ": 93.23778533935547,
+                    "x": 0.745633065700531,
+                    "y": -0.15175475180149078,
+                    "z": -0.10267536342144012
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 376515032
+            },
+            "next": {
+                "identifier": 0
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "waypoints"
+                },
+                "pluginHandle": {
+                    "identifier": "arm_plugin"
+                }
+            },
+            "configuration": {
+                "constraint": {
+                    "acceleration": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            200,
+                            200,
+                            200,
+                            400,
+                            400,
+                            400
+                        ],
+                        "single_joint": 200,
+                        "tcp_rotation": 600,
+                        "tcp_translation": 5
+                    },
+                    "speed": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            60,
+                            60,
+                            60,
+                            140,
+                            140,
+                            140
+                        ],
+                        "single_joint": 60,
+                        "tcp_rotation": 150,
+                        "tcp_translation": 0.25
+                    }
+                },
+                "custom_frame": {
+                    "thetaX": 0,
+                    "thetaY": 0,
+                    "thetaZ": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "goto_options": {
+                    "option": 0
+                },
+                "waypoint_list": [
+                    {
+                        "angles": [
+                            10.250518798828125,
+                            -19.487712860107422,
+                            109.80207061767578,
+                            -0.2142791748046875,
+                            42.354713439941406,
+                            13.5718994140625
+                        ],
+                        "blending_radius": 0,
+                        "blending_radius_angular": 0,
+                        "index": "1",
+                        "init": {
+                            "angles": [
+                                10.250518798828125,
+                                -19.487712860107422,
+                                109.80207061767578,
+                                -0.2142791748046875,
+                                42.354713439941406,
+                                13.5718994140625
+                            ],
+                            "pose": {
+                                "thetaX": 4.276731491088867,
+                                "thetaY": -179.2530975341797,
+                                "thetaZ": 93.23789978027344,
+                                "x": 0.6822972893714905,
+                                "y": 0.01568564400076866,
+                                "z": 0.07028695940971375
+                            }
+                        },
+                        "name": "Waypoint #1",
+                        "pose": {
+                            "x": "${matrixPrepick2.poses[${index}].x}",
+                            "y": "${matrixPrepick2.poses[${index}].y}",
+                            "z": "${matrixPrepick2.poses[${index}].z}",
+                            "thetaX": "${matrixPrepick2.poses[${index}].thetaX}",
+                            "thetaY": "${matrixPrepick2.poses[${index}].thetaY}",
+                            "thetaZ": "${matrixPrepick2.poses[${index}].thetaZ}"
+                        },
+                        "reference_frame": 3,
+                        "type_of_waypoint": "Cartesian",
+                        "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_toggle": false
+                    }
+                ],
+                "waypoint_list_options": {
+                    "type_of_waypoint_global": "Cartesian",
+                    "use_optimal_blending": true
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 2122061586
+            },
+            "next": {
+                "identifier": 2043810074
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "waypoints"
+                },
+                "pluginHandle": {
+                    "identifier": "arm_plugin"
+                }
+            },
+            "configuration": {
+                "constraint": {
+                    "acceleration": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "single_joint": 400
+                    },
+                    "speed": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "single_joint": 140
+                    }
+                },
+                "custom_frame": {
+                    "thetaX": 0,
+                    "thetaY": 0,
+                    "thetaZ": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "goto_options": {
+                    "option": 0
+                },
+                "waypoint_list": [
+                    {
+                        "angles": [
+                            -149.99899291992188,
+                            0.0006103515625,
+                            -89.99993896484375,
+                            180.0012969970703,
+                            -0.001800537109375,
+                            -0.001678466796875
+                        ],
+                        "blending_radius": 0,
+                        "blending_radius_angular": 0,
+                        "index": "1",
+                        "init": {
+                            "angles": [
+                                -149.99899291992188,
+                                0.0006103515625,
+                                -89.99993896484375,
+                                180.0012969970703,
+                                -0.001800537109375,
+                                -0.001678466796875
+                            ],
+                            "pose": {
+                                "thetaX": 0.0002050488837994635,
+                                "thetaY": 179.9992218017578,
+                                "thetaZ": 60,
+                                "x": 0.3848518431186676,
+                                "y": -0.03476075083017349,
+                                "z": 0.4964742064476013
+                            }
+                        },
+                        "name": "Home",
+                        "pose": {
+                            "thetaX": 0.0002050488837994635,
+                            "thetaY": 179.9992218017578,
+                            "thetaZ": 60,
+                            "x": 0.3848518431186676,
+                            "y": -0.03476075083017349,
+                            "z": 0.4964742064476013
+                        },
+                        "reference_frame": 3,
+                        "type_of_waypoint": "Angular",
+                        "waypoint_acceleration_limits_angular_input": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_angular_input": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "waypoint_speed_limits_toggle": false
+                    }
+                ],
+                "waypoint_list_options": {
+                    "type_of_waypoint_global": "Angular",
+                    "use_optimal_blending": true
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1957434000
+            },
+            "next": {
+                "identifier": 0
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "waypoints"
+                },
+                "pluginHandle": {
+                    "identifier": "arm_plugin"
+                }
+            },
+            "configuration": {
+                "constraint": {
+                    "acceleration": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "single_joint": 400
+                    },
+                    "speed": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "single_joint": 140
+                    }
+                },
+                "custom_frame": {
+                    "thetaX": 0,
+                    "thetaY": 0,
+                    "thetaZ": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "goto_options": {
+                    "option": 0
+                },
+                "waypoint_list": [
+                    {
+                        "angles": [
+                            -149.99998474121094,
+                            0,
+                            -90,
+                            180,
+                            -0.000002802989911288023,
+                            0
+                        ],
+                        "blending_radius": 0,
+                        "blending_radius_angular": 0,
+                        "index": "1",
+                        "init": {
+                            "angles": [
+                                -149.99899291992188,
+                                0.00042724609375,
+                                -90.0001220703125,
+                                180.0012969970703,
+                                -0.001983642578125,
+                                -0.001495361328125
+                            ],
+                            "pose": {
+                                "thetaX": 0.0002050488837994635,
+                                "thetaY": 179.9992218017578,
+                                "thetaZ": 60,
+                                "x": 0.3848518431186676,
+                                "y": -0.03476075083017349,
+                                "z": 0.4964742064476013
+                            }
+                        },
+                        "name": "Home",
+                        "pose": {
+                            "thetaX": 0.0002050488837994635,
+                            "thetaY": 179.9992218017578,
+                            "thetaZ": 60,
+                            "x": 0.3848518431186676,
+                            "y": -0.03476075083017349,
+                            "z": 0.4964742064476013
+                        },
+                        "reference_frame": 3,
+                        "type_of_waypoint": "Angular",
+                        "waypoint_acceleration_limits_angular_input": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_angular_input": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "waypoint_speed_limits_toggle": false
+                    }
+                ],
+                "waypoint_list_options": {
+                    "type_of_waypoint_global": "Angular",
+                    "use_optimal_blending": true
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 196473740
+            },
+            "next": {
+                "identifier": 2122061586
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "activate"
+                },
+                "pluginHandle": {
+                    "identifier": "robotiq_plugin"
+                }
+            },
+            "configuration": {},
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 74600646
+            },
+            "next": {
+                "identifier": 1447108595
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "close"
+                },
+                "pluginHandle": {
+                    "identifier": "robotiq_plugin"
+                }
+            },
+            "configuration": {
+                "velocity": 255,
+                "force": 255
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 2114446849
+            },
+            "next": {
+                "identifier": 376515032
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "open"
+                },
+                "pluginHandle": {
+                    "identifier": "robotiq_plugin"
+                }
+            },
+            "configuration": {
+                "velocity": 255,
+                "force": 255
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        }
+    ],
+    "variables": [
+        {
+            "variable": {
+                "flags": [],
+                "handle": {
+                    "namespaceHandle": {
+                        "identifier": ""
+                    },
+                    "identifier": "matrixPrepick"
+                },
+                "type": 4,
+                "boolValue": false,
+                "numberValue": 0,
+                "stringValue": "",
+                "jsonValue": "",
+                "schemaKey": "arm_plugin_matrix_output",
+                "isSystem": false,
+                "unit": ""
+            },
+            "boolDefaultValue": false,
+            "numberDefaultValue": 0,
+            "stringDefaultValue": "{\"poses\":[]}",
+            "isPersistent": false,
+            "isInput": false,
+            "isOutput": false,
+            "isRequired": false,
+            "hasDefaultValue": true
+        },
+        {
+            "variable": {
+                "flags": [],
+                "handle": {
+                    "namespaceHandle": {
+                        "identifier": ""
+                    },
+                    "identifier": "new_variable_0"
+                },
+                "type": 4,
+                "boolValue": false,
+                "numberValue": 0,
+                "stringValue": "",
+                "jsonValue": "",
+                "schemaKey": "default_pose",
+                "isSystem": false,
+                "unit": ""
+            },
+            "boolDefaultValue": false,
+            "numberDefaultValue": 0,
+            "stringDefaultValue": "{\"x\":0,\"y\":0,\"z\":0,\"thetaX\":0,\"thetaY\":0,\"thetaZ\":0}",
+            "isPersistent": false,
+            "isInput": false,
+            "isOutput": false,
+            "isRequired": false,
+            "hasDefaultValue": true
+        },
+        {
+            "variable": {
+                "flags": [],
+                "handle": {
+                    "namespaceHandle": {
+                        "identifier": ""
+                    },
+                    "identifier": "index"
+                },
+                "type": 2,
+                "boolValue": false,
+                "numberValue": 0,
+                "stringValue": "",
+                "jsonValue": "",
+                "schemaKey": "",
+                "isSystem": false,
+                "unit": "unspecified"
+            },
+            "boolDefaultValue": false,
+            "numberDefaultValue": 0,
+            "stringDefaultValue": "",
+            "isPersistent": false,
+            "isInput": false,
+            "isOutput": false,
+            "isRequired": false,
+            "hasDefaultValue": true
+        },
+        {
+            "variable": {
+                "flags": [],
+                "handle": {
+                    "namespaceHandle": {
+                        "identifier": ""
+                    },
+                    "identifier": "matrix"
+                },
+                "type": 3,
+                "boolValue": false,
+                "numberValue": 0,
+                "stringValue": "",
+                "jsonValue": "",
+                "schemaKey": "",
+                "isSystem": false,
+                "unit": ""
+            },
+            "boolDefaultValue": false,
+            "numberDefaultValue": 0,
+            "stringDefaultValue": "",
+            "isPersistent": false,
+            "isInput": false,
+            "isOutput": false,
+            "isRequired": false,
+            "hasDefaultValue": false
+        },
+        {
+            "variable": {
+                "flags": [],
+                "handle": {
+                    "namespaceHandle": {
+                        "identifier": ""
+                    },
+                    "identifier": "matrixPrepick2"
+                },
+                "type": 4,
+                "boolValue": false,
+                "numberValue": 0,
+                "stringValue": "",
+                "jsonValue": "",
+                "schemaKey": "arm_plugin_matrix_output",
+                "isSystem": false,
+                "unit": ""
+            },
+            "boolDefaultValue": false,
+            "numberDefaultValue": 0,
+            "stringDefaultValue": "{}",
+            "isPersistent": false,
+            "isInput": false,
+            "isOutput": false,
+            "isRequired": false,
+            "hasDefaultValue": true
+        }
+    ],
+    "handle": {
+        "identifier": 23,
+        "permission": 7
+    },
+    "name": "Matrix Tool Frame - Pick and Place",
+    "isValidated": false
+}
