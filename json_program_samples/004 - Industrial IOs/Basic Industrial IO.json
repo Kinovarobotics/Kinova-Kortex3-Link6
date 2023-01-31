@@ -1,0 +1,372 @@
+{
+    "actions": [
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1
+            },
+            "next": {
+                "identifier": 611205876
+            },
+            "name": "Input",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "1"
+                },
+                "pluginHandle": {
+                    "identifier": ""
+                }
+            },
+            "configuration": null,
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 1,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 611205876
+            },
+            "next": {
+                "identifier": 1176946676
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "set_output"
+                },
+                "pluginHandle": {
+                    "identifier": "industrial_io_plugin"
+                }
+            },
+            "configuration": {
+                "io_type": "Digital",
+                "output_settings": {
+                    "state": 1,
+                    "name": 0
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1176946676
+            },
+            "next": {
+                "identifier": 1883080717
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "read_input"
+                },
+                "pluginHandle": {
+                    "identifier": "industrial_io_plugin"
+                }
+            },
+            "configuration": {
+                "io_type": "Digital",
+                "input_settings": {
+                    "name": 0
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "${input}",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1883080717
+            },
+            "next": {
+                "identifier": 1199795036
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "9"
+                },
+                "pluginHandle": {
+                    "identifier": ""
+                }
+            },
+            "configuration": {
+                "message": "${input}",
+                "level": 2
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 9,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1199795036
+            },
+            "next": {
+                "identifier": 1014717401
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "7"
+                },
+                "pluginHandle": {
+                    "identifier": ""
+                }
+            },
+            "configuration": {
+                "milliseconds": 2000
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 7,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1014717401
+            },
+            "next": {
+                "identifier": 1407552062
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "wait_input"
+                },
+                "pluginHandle": {
+                    "identifier": "industrial_io_plugin"
+                }
+            },
+            "configuration": {
+                "io_type": "Digital",
+                "timeout": 0,
+                "input_settings": {
+                    "state": 1,
+                    "name": 0
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1407552062
+            },
+            "next": {
+                "identifier": 905050001
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "set_output"
+                },
+                "pluginHandle": {
+                    "identifier": "industrial_io_plugin"
+                }
+            },
+            "configuration": {
+                "io_type": "Digital",
+                "output_settings": {
+                    "state": 0,
+                    "name": 0
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 905050001
+            },
+            "next": {
+                "identifier": 2005748298
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "read_input"
+                },
+                "pluginHandle": {
+                    "identifier": "industrial_io_plugin"
+                }
+            },
+            "configuration": {
+                "io_type": "Digital",
+                "input_settings": {
+                    "name": 0
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "${input}",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 2005748298
+            },
+            "next": {
+                "identifier": 1001269994
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "9"
+                },
+                "pluginHandle": {
+                    "identifier": ""
+                }
+            },
+            "configuration": {
+                "message": "${input}",
+                "level": 2
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 9,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1826724427
+            },
+            "next": {
+                "identifier": 0
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "wait_input"
+                },
+                "pluginHandle": {
+                    "identifier": "industrial_io_plugin"
+                }
+            },
+            "configuration": {
+                "io_type": "Digital",
+                "timeout": 15000,
+                "input_settings": {
+                    "state": 1,
+                    "name": 0
+                }
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 4,
+            "blocking": true
+        },
+        {
+            "branches": [],
+            "handle": {
+                "identifier": 1001269994
+            },
+            "next": {
+                "identifier": 1826724427
+            },
+            "name": "",
+            "pluginActionHandle": {
+                "actionHandle": {
+                    "identifier": "9"
+                },
+                "pluginHandle": {
+                    "identifier": ""
+                }
+            },
+            "configuration": {
+                "message": "The next Wait for input tile will timeout after 15 seconds. Press the stop button to interrupt the program right away",
+                "level": 2
+            },
+            "storeOutputTo": {
+                "identifier": "",
+                "schemaKey": "",
+                "type": 4
+            },
+            "type": 9,
+            "blocking": true
+        }
+    ],
+    "variables": [
+        {
+            "variable": {
+                "flags": [],
+                "handle": {
+                    "namespaceHandle": {
+                        "identifier": ""
+                    },
+                    "identifier": "input"
+                },
+                "type": 4,
+                "boolValue": false,
+                "numberValue": 0,
+                "stringValue": "",
+                "jsonValue": "",
+                "schemaKey": "industrial_io_plugin_read_input_output",
+                "isSystem": false,
+                "unit": ""
+            },
+            "boolDefaultValue": false,
+            "numberDefaultValue": 0,
+            "stringDefaultValue": "{\"result\":0}",
+            "isPersistent": false,
+            "isInput": false,
+            "isOutput": false,
+            "isRequired": false,
+            "hasDefaultValue": true
+        }
+    ],
+    "handle": {
+        "identifier": 104,
+        "permission": 7
+    },
+    "name": "Basic Industrial IO",
+    "isValidated": false
+}
