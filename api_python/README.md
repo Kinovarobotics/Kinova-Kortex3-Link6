@@ -15,7 +15,9 @@
 <a id="markdown-description" name="description"></a>
 # Description
 
-This folder contains the installation process, some examples and how to use the Api_Python. If you need more information, you can access the full documentation on this website. https://docs.kinovarobotics.com/index.html 
+This folder contains the Python API installation process, as well as examples going over the main functionalities of the API. 
+The full documentation of the API is available at https://docs.kinovarobotics.com/index.html .
+If you have any questions, reach out to us at support@kinova.ca.
 <h2>Table of Contents</h2>
 
 <!-- TOC -->
@@ -67,17 +69,19 @@ python -m pip install <whl relative fullpath name>.whl
 
 We assume the robot is using its default IP address: ``192.168.1.10``
 
-If you don't use the default IP address, you can add the argument --ip with the good IP of the robot.
+If you don't use the default IP address, you can add the argument --ip with the right IP of the robot.
 ```sh
 python3 --ip 192.168.2.22 <example-file>.py
 ```
 
 
-Before starting, ensure that you run the test in a safe area with some examples that contain movement. Also, verify that your robot is correctly fixed to the working surface.
+Before starting, ensure that you run the test in a safe area since some examples contain movement. Also, verify that your robot is correctly fixed to the working surface.
 
 Prerequisites:
 + The examples require a wired network connection to your computer
 + Configure a static IP address on your network interface (e.g. ``192.168.1.11/24``)
+
+Some examples may require json programs to be uploaded on your controller to be able to run as is. You can either find these programs in 400-Json_programs, or modify the examples to use your own programs.
 
 Now you're ready to run the examples. Each Python example has its own ``__main__`` instruction. You need only to ``cd`` into the example directory and invoke the Python file using the command:
 

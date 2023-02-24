@@ -54,7 +54,7 @@ When using the Kortex API a developer will need to understand the Google Protoco
 
 
 <a id="markdown-quick-start-howto-python" name="quick-start-howto-python"></a>
-## Quick Start for Python users
+# Quick Start for Python users
 
   To run the Python examples you will need to install the Python interpreter and the pip installation module.
 
@@ -67,16 +67,12 @@ When using the Kortex API a developer will need to understand the Google Protoco
   - [Examples](./api_python/readme.md)
 
 <a id="markdown-quick-start-howto-modbus" name="quick-start-howto-modbus"></a>
-## Quick Start for Modbus and Ethernet Ip Users
-The robot handle the communication via a modbus interface and a ethernet ip interface. It is not done via the Kortex API.
-
-To communicate with the arm you must use the FieldBusAdapter plugin that Kinova provide.
+# Using Modbus and Ethernet IP Users
+The robot handle the communication via  Modbus  and Ethernet/IP. This is done via the FieldBusAdapter plugin provided by Kinova.
 
 [Plugin Download](https://artifactory.kinovaapps.com:443/artifactory/generic-public/kortex/plugins/fieldbus_adapter/1.1.0/fieldbus_adapter_1.1.0-r.5.kp)
 
 [Documentation](https://artifactory.kinovaapps.com:443/artifactory/generic-documentation-public/Documentation/Link%206/Plugins/Fieldbus%20Adapter/EN-UG-021-FieldBusAdapter-Plugin-user-guide-r1.1.pdf)
-
-
 
 
 <a id="markdown-api-download-links" name="api-download-links"></a>
@@ -92,7 +88,7 @@ To communicate with the arm you must use the FieldBusAdapter plugin that Kinova 
 
 # Build and Run instructions
 
-[Python API](./api_python/readme.md) 
+[Python API](./api_python/README.md) 
 
 <a id="markdown-reference" name="reference"></a>
 # Reference
