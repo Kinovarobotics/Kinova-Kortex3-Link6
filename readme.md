@@ -77,7 +77,7 @@ The robot handle the communication via  Modbus  and Ethernet/IP. This is done vi
 
 <a id="markdown-api-download-links" name="api-download-links"></a>
 # Download links
-
+Before getting started, please review the release notes to learn about any limitations or known issues of the Kortex API for Link 6. Ensure proper training from reviewing the user guide on how to safely use the product.
 
 | Firmware     | Release notes      | API |
 | :----------: | :-----------: | :-----------:|
