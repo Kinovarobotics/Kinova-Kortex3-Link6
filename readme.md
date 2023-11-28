@@ -27,7 +27,6 @@ The official repository contains documentation and examples explaining how to us
   - [Quick Start for Python users](#quick-start-for-python-users)
   - [Quick Start for Modbus and Ethernet IP users](#quick-start-for-modbus-ethernet-ip-users)
 - [Download links](#download-links)
-- [Build and Run instructions](#build-and-run-instructions)
 - [Reference](#reference)
       - [Useful Links](#useful-links)
 
@@ -60,15 +59,13 @@ When using the Kortex API a developer will need to understand the Google Protoco
 
   Here is some general information about the Python interpreter and the pip module manager.  
   - [Python General Information](./linked_md/python_quick_start.md)
-  - [API mechanism](./linked_md/python_api_mechanism.md)
-  - [Transport / Router / Session / Notification](./linked_md/python_transport_router_session_notif.md)
-  - [Device routing](./linked_md/python_device_routing.md)
-  - [Error management](./linked_md/python_error_management.md)
-  - [Examples](./api_python/readme.md)
+  - [Python API onboarding](./api_python/README.md) 
+  - [API documentation](docs.kinovarobotics.com)
+  - [Examples](./api_python/README.md)
 
 <a id="markdown-quick-start-howto-modbus" name="quick-start-howto-modbus"></a>
 # Using Modbus and Ethernet IP Users
-The robot handle the communication via  Modbus  and Ethernet/IP. This is done via the FieldBusAdapter plugin provided by Kinova.
+As an alternative to API usage, robot can handle communication via Modbus and Ethernet/IP. This is done via the FieldBus Adapter plugin provided by Kinova.
 
 [Plugin Download](https://artifactory.kinovaapps.com:443/artifactory/generic-public/kortex/plugins/fieldbus_adapter/1.1.0/fieldbus_adapter_1.1.0-r.5.kp)
 
@@ -85,10 +82,6 @@ Before getting started, please review the release notes to learn about any limit
 
 </details>
 <a id="markdown-build-and-run-instructions" name="build-and-run-instructions"></a>
-
-# Build and Run instructions
-
-[Python API](./api_python/README.md) 
 
 <a id="markdown-reference" name="reference"></a>
 # Reference
