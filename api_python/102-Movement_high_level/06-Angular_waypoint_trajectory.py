@@ -91,62 +91,59 @@ def example_move_to_home_position(base, program_runner):
 
 # This function populates an Angular waypoint object with the data provided by an array
 def populate_angular_coordinates(waypointInformation):
+    """
+    Populate AngularWaypoint message with provided angular coordinates, duration, and blending.
 
+    Args:
+        waypointInformation (tuple): Tuple containing angular coordinates (list), duration (float), and blending (float).
 
+    Returns:
+        Base_pb2.AngularWaypoint: AngularWaypoint message populated with the provided information.
+    """
     waypoint = Base_pb2.AngularWaypoint()
-    waypoint.angles.MergeFrom(waypointInformation[0])  # array of 6 angles, in degrees
-    waypoint.duration = waypointInformation[1]  # in seconds
-    waypoint.blending = waypointInformation[2]  # float from 0 to 1, 1 being the optimal blending
+
+    # Extract values from the tuple
+    angles_list, duration, blending = waypointInformation
+
+    # Populate AngularWaypoint fields
+    waypoint.angles.extend(map(float, angles_list))  # Array of 6 angles, in degrees
+    waypoint.duration = duration  # Duration in seconds
+    waypoint.blending = blending  # Blending factor, float from 0 to 1 (1 being optimal blending)
 
     return waypoint
-
-
 def example_angular_trajectory(base):
-
+    # Set the operating mode to AUTO
     change_operating_mode(base, "OPERATING_MODE_AUTO")
 
-    waypointsDefinition = (
-        ([-15.0, 50.6, 84.8, 0.8, -23.8, -13.9], 5, 0),
-        ([0.6, 40.1, 60.1, 5.3, 0.0, -20.1], 5, 0),
-        ([30.5, 76.5, 90.5, 0.4, -20.1, -15.6], 5, 0),
-        ([-15.6, 30.8, 85.1, 10.9, -10.7, -20.3], 5, 0),
-        ([-20.4, 30.5, 80.5, 0.4, -20.1, -10.6], 5, 0),
-        ([20.8, 30.7, 70.2, 0.8, -30.5, -15.8], 5, 0),
-        ([50.0, 45.6, 84.9, 0.2, -20.3, -5.0], 5, 0),
-    )
+    # Define waypoints with angles, duration, and blending values
+    waypointsDefinition = [
+        ([40, -22, 75, 0, 10, 20], 5, 1),
+        ([40, -20, 70, 0, 11, 21], 5, 1),
+        ([40, -22, 75, 0, 10, 20], 5, 1),
+    ]
 
-    waypoint_count = len(waypointsDefinition)
-
+    # Create a WaypointList to hold the waypoints
     wptlist = Base_pb2.WaypointList()
     wptlist.use_optimal_blending = True
 
-    # Create waypoints from the waypointsDefinition array
-    array_wpts = np.array([])
-    index = 0
-    for i in range(0, waypoint_count):
-
-        np.append(array_wpts, waypointsDefinition[i])
+    # Iterate over waypoints and add them to the WaypointList
+    for i, (angles, duration, blending) in enumerate(waypointsDefinition):
         waypoint = wptlist.waypoints.add()
-        waypoint.name = "waypoint_" + str(index)
-        waypoint.angular_waypoint.CopyFrom(populate_angular_coordinates(waypointsDefinition[i]))
-        index = index + 1
+        waypoint.name = f"waypoint_{i}"
+        # Populate Angular waypoint coordinates using the provided function
+        waypoint.angular_waypoint.CopyFrom(populate_angular_coordinates((angles, duration, blending)))
 
-    # Add waypoints to waypoint list
-    wptlist.waypoints.MergeFrom(array_wpts)
-    wptlist.duration = 30  # in seconds
+    # Validate the waypoint list
     result = base.ValidateWaypointList(wptlist)
 
-    # If list is valid, execute the waypoint list. If not, print an error
+    # If the list is valid, execute the waypoint list. If not, print an error
     if len(result.trajectory_error_report.trajectory_error_elements) == 0:
-
-        print("Reaching cartesian pose trajectory...")
+        print("Executing angular waypoint trajectory...")
         base.ExecuteWaypointTrajectory(wptlist)
-
     else:
         print("Error found in trajectory")
         print(result.trajectory_error_report)
         return
-
 
 def main():
 
