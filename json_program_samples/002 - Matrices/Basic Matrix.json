@@ -24,7 +24,8 @@
                 "type": 4
             },
             "type": 1,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -44,75 +45,171 @@
                 }
             },
             "configuration": {
-                "grid": {
-                    "number_of_rows": 2,
-                    "number_of_columns": 2,
-                    "starting_point": 0,
-                    "traversal": 0
-                },
-                "stack": {
-                    "count": 1,
-                    "height": 0,
-                    "is_traversal_bottom_to_top": true
-                },
-                "origin": {
-                    "x": 0.674778401851654,
-                    "y": 0.01656225696206093,
-                    "z": 0.08,
-                    "thetaX": 4.276730060577393,
-                    "thetaY": -179.25311279296875,
-                    "thetaZ": 93.23789978027344
-                },
-                "x_last_pose_in_base": {
-                    "x": 0.6747791171073914,
-                    "y": -0.041847728192806244,
-                    "z": 0.08,
-                    "thetaX": 4.276712417602539,
-                    "thetaY": -179.2530975341797,
-                    "thetaZ": 93.23782348632812
-                },
-                "y_last_pose_in_base": {
-                    "x": 0.735,
-                    "y": 0.016580751165747643,
-                    "z": 0.08,
-                    "thetaX": 4.247952938079834,
-                    "thetaY": -179.26129150390625,
-                    "thetaZ": 93.2417984008789
-                },
                 "computed_poses": [
                     {
-                        "thetaX": 4.276730060577393,
-                        "thetaY": -179.25311279296875,
-                        "thetaZ": 93.23789978027344,
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
                         "x": 0.674778401851654,
                         "y": 0.01656225696206093,
                         "z": 0.08
                     },
                     {
-                        "thetaX": 4.276730060577393,
-                        "thetaY": -179.25311279296875,
-                        "thetaZ": 93.23789978027344,
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
                         "x": 0.6747791171073914,
                         "y": -0.041847728192806244,
                         "z": 0.08
                     },
                     {
-                        "thetaX": 4.276730060577393,
-                        "thetaY": -179.25311279296875,
-                        "thetaZ": 93.23789978027344,
-                        "x": 0.7352237105369568,
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.7349999994039536,
                         "y": 0.016580751165747643,
-                        "z": 0.08015878498379607
+                        "z": 0.08
                     },
                     {
-                        "thetaX": 4.276730060577393,
-                        "thetaY": -179.25311279296875,
-                        "thetaZ": 93.23789978027344,
-                        "x": 0.7352244257926941,
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.7350007146596909,
                         "y": -0.04182923212647438,
-                        "z": 0.08015878498379607
+                        "z": 0.08
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.674778401851654,
+                        "y": 0.01656225696206093,
+                        "z": 0.18000000149011613
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.6747791171073914,
+                        "y": -0.041847728192806244,
+                        "z": 0.18000000149011613
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.7349999994039536,
+                        "y": 0.016580751165747643,
+                        "z": 0.18000000149011613
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.7350007146596909,
+                        "y": -0.04182923212647438,
+                        "z": 0.18000000149011613
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.674778401851654,
+                        "y": 0.01656225696206093,
+                        "z": 0.28000000298023225
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.6747791171073914,
+                        "y": -0.041847728192806244,
+                        "z": 0.28000000298023225
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.7349999994039536,
+                        "y": 0.016580751165747643,
+                        "z": 0.28000000298023225
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.7350007146596909,
+                        "y": -0.04182923212647438,
+                        "z": 0.28000000298023225
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.674778401851654,
+                        "y": 0.01656225696206093,
+                        "z": 0.38000001192092897
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.6747791171073914,
+                        "y": -0.041847728192806244,
+                        "z": 0.38000001192092897
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.7349999994039536,
+                        "y": 0.016580751165747643,
+                        "z": 0.38000001192092897
+                    },
+                    {
+                        "thetaX": 0,
+                        "thetaY": 0,
+                        "thetaZ": 0,
+                        "x": 0.7350007146596909,
+                        "y": -0.04182923212647438,
+                        "z": 0.38000001192092897
                     }
-                ]
+                ],
+                "grid": {
+                    "number_of_columns": 2,
+                    "number_of_rows": 2,
+                    "starting_point": 0,
+                    "traversal": 0
+                },
+                "origin": {
+                    "thetaX": 0,
+                    "thetaY": 0,
+                    "thetaZ": 0,
+                    "x": 0.674778401851654,
+                    "y": 0.01656225696206093,
+                    "z": 0.08
+                },
+                "stack": {
+                    "count": 4,
+                    "height": 0.1,
+                    "is_traversal_bottom_to_top": true
+                },
+                "x_last_pose_in_base": {
+                    "thetaX": 4.276712417602539,
+                    "thetaY": -179.2530975341797,
+                    "thetaZ": 93.23782348632812,
+                    "x": 0.6747791171073914,
+                    "y": -0.041847728192806244,
+                    "z": 0.08
+                },
+                "y_last_pose_in_base": {
+                    "thetaX": 4.247952938079834,
+                    "thetaY": -179.26129150390625,
+                    "thetaZ": 93.2417984008789,
+                    "x": 0.735,
+                    "y": 0.016580751165747643,
+                    "z": 0.08
+                }
             },
             "storeOutputTo": {
                 "identifier": "${matrix1}",
@@ -120,7 +217,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -155,9 +253,9 @@
                     "x": 0.6809808611869812,
                     "y": -0.15516339242458344,
                     "z": 0.08,
-                    "thetaX": 4.276904582977295,
-                    "thetaY": -179.2530059814453,
-                    "thetaZ": 93.23780822753906
+                    "thetaX": 0,
+                    "thetaY": -180,
+                    "thetaZ": 0
                 },
                 "x_last_pose_in_base": {
                     "x": 0.6809797286987305,
@@ -216,7 +314,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [
@@ -253,7 +352,8 @@
                 "type": 4
             },
             "type": 3,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -284,6 +384,7 @@
                             null,
                             null
                         ],
+                        "single_joint": 200,
                         "tcp_rotation": 600,
                         "tcp_translation": 5
                     },
@@ -297,6 +398,7 @@
                             null,
                             null
                         ],
+                        "single_joint": 60,
                         "tcp_rotation": 150,
                         "tcp_translation": 0.25
                     }
@@ -344,6 +446,7 @@
                                 "z": 0.13610997796058655
                             }
                         },
+                        "last_reference_frame": 3,
                         "name": "Pre-pick",
                         "pose": {
                             "thetaX": "${matrix1.poses[${index}].thetaX}",
@@ -353,7 +456,7 @@
                             "y": "${matrix1.poses[${index}].y}",
                             "z": 0.17
                         },
-                        "reference_frame": 3,
+                        "specific_reference_frame_toggle": false,
                         "type_of_waypoint": "Cartesian",
                         "waypoint_acceleration_limits_angular_input": [
                             null,
@@ -404,6 +507,7 @@
                                 "z": 0.17000003159046173
                             }
                         },
+                        "last_reference_frame": 3,
                         "name": "Waypoint #2",
                         "pose": {
                             "thetaX": "${matrix1.poses[${index}].thetaX}",
@@ -413,7 +517,7 @@
                             "y": "${matrix1.poses[${index}].y}",
                             "z": "${matrix1.poses[${index}].z}"
                         },
-                        "reference_frame": 3,
+                        "specific_reference_frame_toggle": false,
                         "type_of_waypoint": "Cartesian",
                         "waypoint_acceleration_limits_angular_input": [
                             null,
@@ -436,6 +540,7 @@
                     }
                 ],
                 "waypoint_list_options": {
+                    "global_reference_frame": 3,
                     "type_of_waypoint_global": "Cartesian",
                     "use_optimal_blending": true
                 }
@@ -446,7 +551,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         },
         {
             "branches": [],
@@ -546,6 +652,7 @@
                                 "z": 0.07830382883548737
                             }
                         },
+                        "last_reference_frame": 3,
                         "name": "Waypoint #1",
                         "pose": {
                             "thetaX": "${matrix1.poses[${index}].thetaX}",
@@ -555,7 +662,7 @@
                             "y": "${matrix1.poses[${index}].y}",
                             "z": 0.17
                         },
-                        "reference_frame": 3,
+                        "specific_reference_frame_toggle": false,
                         "type_of_waypoint": "Cartesian",
                         "waypoint_acceleration_limits_toggle": false,
                         "waypoint_speed_limits_toggle": false
@@ -590,6 +697,7 @@
                                 "z": 0.07830382883548737
                             }
                         },
+                        "last_reference_frame": 3,
                         "name": "Waypoint #2",
                         "pose": {
                             "thetaX": "${matrix2.poses[${index}].thetaX}",
@@ -599,7 +707,7 @@
                             "y": "${matrix2.poses[${index}].y}",
                             "z": 0.17
                         },
-                        "reference_frame": 3,
+                        "specific_reference_frame_toggle": false,
                         "type_of_waypoint": "Cartesian",
                         "waypoint_acceleration_limits_toggle": false,
                         "waypoint_speed_limits_toggle": false
@@ -634,22 +742,24 @@
                                 "z": 0.07830382883548737
                             }
                         },
+                        "last_reference_frame": 3,
                         "name": "Waypoint #3",
                         "pose": {
-                            "x": "${matrix2.poses[${index}].x}",
-                            "y": "${matrix2.poses[${index}].y}",
-                            "z": "${matrix2.poses[${index}].z}",
                             "thetaX": "${matrix2.poses[${index}].thetaX}",
                             "thetaY": "${matrix2.poses[${index}].thetaY}",
-                            "thetaZ": "${matrix2.poses[${index}].thetaZ}"
+                            "thetaZ": "${matrix2.poses[${index}].thetaZ}",
+                            "x": "${matrix2.poses[${index}].x}",
+                            "y": "${matrix2.poses[${index}].y}",
+                            "z": "${matrix2.poses[${index}].z}"
                         },
-                        "reference_frame": 3,
+                        "specific_reference_frame_toggle": false,
                         "type_of_waypoint": "Cartesian",
                         "waypoint_acceleration_limits_toggle": false,
                         "waypoint_speed_limits_toggle": false
                     }
                 ],
                 "waypoint_list_options": {
+                    "global_reference_frame": 3,
                     "type_of_waypoint_global": "Cartesian",
                     "use_optimal_blending": true
                 }
@@ -660,7 +770,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         },
         {
             "branches": [],
@@ -680,33 +791,9 @@
                 }
             },
             "configuration": {
-                "waypoint_list_options": {
-                    "type_of_waypoint_global": "Cartesian",
-                    "use_optimal_blending": true
-                },
-                "goto_options": {
-                    "option": 0
-                },
                 "constraint": {
-                    "speed": {
-                        "tcp_translation": 0.25,
-                        "tcp_rotation": 150,
-                        "edit_all_joints_in_one": true,
-                        "single_joint": 60,
-                        "joints": [
-                            60,
-                            60,
-                            60,
-                            140,
-                            140,
-                            140
-                        ]
-                    },
                     "acceleration": {
-                        "tcp_translation": 5,
-                        "tcp_rotation": 600,
                         "edit_all_joints_in_one": true,
-                        "single_joint": 200,
                         "joints": [
                             200,
                             200,
@@ -714,34 +801,39 @@
                             400,
                             400,
                             400
-                        ]
+                        ],
+                        "single_joint": 200,
+                        "tcp_rotation": 600,
+                        "tcp_translation": 5
+                    },
+                    "speed": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            60,
+                            60,
+                            60,
+                            140,
+                            140,
+                            140
+                        ],
+                        "single_joint": 60,
+                        "tcp_rotation": 150,
+                        "tcp_translation": 0.25
                     }
                 },
                 "custom_frame": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
                     "thetaX": 0,
                     "thetaY": 0,
-                    "thetaZ": 0
+                    "thetaZ": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "goto_options": {
+                    "option": 0
                 },
                 "waypoint_list": [
                     {
-                        "index": "1",
-                        "name": "Waypoint #1",
-                        "type_of_waypoint": "Cartesian",
-                        "reference_frame": 3,
-                        "pose": {
-                            "x": "${matrix2.poses[${index}].x}",
-                            "y": "${matrix2.poses[${index}].y}",
-                            "z": 0.17,
-                            "thetaX": "${matrix2.poses[${index}].thetaX}",
-                            "thetaY": "${matrix2.poses[${index}].thetaY}",
-                            "thetaZ": "${matrix2.poses[${index}].thetaZ}"
-                        },
-                        "blending_radius": 0,
-                        "waypoint_speed_limits_toggle": false,
-                        "waypoint_acceleration_limits_toggle": false,
                         "angles": [
                             10.250518798828125,
                             -19.487712860107422,
@@ -750,7 +842,9 @@
                             42.354713439941406,
                             13.5718994140625
                         ],
+                        "blending_radius": 0,
                         "blending_radius_angular": 0,
+                        "index": "1",
                         "init": {
                             "angles": [
                                 10.250518798828125,
@@ -768,9 +862,28 @@
                                 "y": 0.01568564400076866,
                                 "z": 0.07028695940971375
                             }
-                        }
+                        },
+                        "last_reference_frame": 3,
+                        "name": "Waypoint #1",
+                        "pose": {
+                            "thetaX": "${matrix2.poses[${index}].thetaX}",
+                            "thetaY": "${matrix2.poses[${index}].thetaY}",
+                            "thetaZ": "${matrix2.poses[${index}].thetaZ}",
+                            "x": "${matrix2.poses[${index}].x}",
+                            "y": "${matrix2.poses[${index}].y}",
+                            "z": 0.17
+                        },
+                        "specific_reference_frame_toggle": false,
+                        "type_of_waypoint": "Cartesian",
+                        "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_toggle": false
                     }
-                ]
+                ],
+                "waypoint_list_options": {
+                    "global_reference_frame": 3,
+                    "type_of_waypoint_global": "Cartesian",
+                    "use_optimal_blending": true
+                }
             },
             "storeOutputTo": {
                 "identifier": "",
@@ -778,7 +891,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         },
         {
             "branches": [],
@@ -809,7 +923,9 @@
                             null,
                             null
                         ],
-                        "single_joint": 400
+                        "single_joint": 400,
+                        "tcp_rotation": 300,
+                        "tcp_translation": 2.5
                     },
                     "speed": {
                         "edit_all_joints_in_one": true,
@@ -821,7 +937,9 @@
                             null,
                             null
                         ],
-                        "single_joint": 140
+                        "single_joint": 140,
+                        "tcp_rotation": 150,
+                        "tcp_translation": 0.25
                     }
                 },
                 "custom_frame": {
@@ -875,7 +993,7 @@
                             "y": 0.006580776534974575,
                             "z": 0.4440790116786957
                         },
-                        "reference_frame": 3,
+                        "specific_reference_frame_toggle": false,
                         "type_of_waypoint": "Angular",
                         "waypoint_acceleration_limits_angular_input": [
                             null,
@@ -898,6 +1016,7 @@
                     }
                 ],
                 "waypoint_list_options": {
+                    "global_reference_frame": 3,
                     "type_of_waypoint_global": "Angular",
                     "use_optimal_blending": true
                 }
@@ -908,7 +1027,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         },
         {
             "branches": [],
@@ -939,7 +1059,9 @@
                             null,
                             null
                         ],
-                        "single_joint": 400
+                        "single_joint": 400,
+                        "tcp_rotation": 300,
+                        "tcp_translation": 2.5
                     },
                     "speed": {
                         "edit_all_joints_in_one": true,
@@ -951,7 +1073,9 @@
                             null,
                             null
                         ],
-                        "single_joint": 140
+                        "single_joint": 140,
+                        "tcp_rotation": 150,
+                        "tcp_translation": 0.25
                     }
                 },
                 "custom_frame": {
@@ -1005,7 +1129,7 @@
                             "y": -0.03476075083017349,
                             "z": 0.4964742064476013
                         },
-                        "reference_frame": 3,
+                        "specific_reference_frame_toggle": false,
                         "type_of_waypoint": "Angular",
                         "waypoint_acceleration_limits_angular_input": [
                             null,
@@ -1028,6 +1152,7 @@
                     }
                 ],
                 "waypoint_list_options": {
+                    "global_reference_frame": 3,
                     "type_of_waypoint_global": "Angular",
                     "use_optimal_blending": true
                 }
@@ -1038,7 +1163,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         },
         {
             "branches": [],
@@ -1057,14 +1183,17 @@
                     "identifier": "robotiq_plugin"
                 }
             },
-            "configuration": {},
+            "configuration": {
+                "gripper": "Gripper A"
+            },
             "storeOutputTo": {
                 "identifier": "",
                 "schemaKey": "",
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.4.0-dev.358"
         },
         {
             "branches": [],
@@ -1084,8 +1213,9 @@
                 }
             },
             "configuration": {
-                "velocity": 255,
-                "force": 255
+                "force": 255,
+                "gripper": "Gripper A",
+                "velocity": 255
             },
             "storeOutputTo": {
                 "identifier": "",
@@ -1093,7 +1223,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.4.0-dev.358"
         },
         {
             "branches": [],
@@ -1113,8 +1244,9 @@
                 }
             },
             "configuration": {
-                "velocity": 255,
-                "force": 255
+                "force": 255,
+                "gripper": "Gripper A",
+                "velocity": 255
             },
             "storeOutputTo": {
                 "identifier": "",
@@ -1122,7 +1254,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.4.0-dev.358"
         }
     ],
     "variables": [
@@ -1151,7 +1284,7 @@
             "isInput": false,
             "isOutput": false,
             "isRequired": false,
-            "hasDefaultValue": true
+            "hasDefaultValue": false
         },
         {
             "variable": {
@@ -1178,7 +1311,7 @@
             "isInput": false,
             "isOutput": false,
             "isRequired": false,
-            "hasDefaultValue": true
+            "hasDefaultValue": false
         },
         {
             "variable": {
@@ -1205,13 +1338,16 @@
             "isInput": false,
             "isOutput": false,
             "isRequired": false,
-            "hasDefaultValue": true
+            "hasDefaultValue": false
         }
     ],
     "handle": {
-        "identifier": 22,
+        "identifier": 121,
         "permission": 7
     },
     "name": "Basic Matrix - Pick and Place",
-    "isValidated": false
+    "isValidated": true,
+    "lastValidatedOn": "2024-04-19 17:43:47.890Z",
+    "lastModifiedOn": "2024-04-18 19:40:05.033Z",
+    "persistentVariables": []
 }

@@ -24,7 +24,8 @@
                 "type": 4
             },
             "type": 1,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -56,7 +57,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -87,7 +89,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -116,7 +119,8 @@
                 "type": 4
             },
             "type": 9,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -144,7 +148,8 @@
                 "type": 4
             },
             "type": 7,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -177,7 +182,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -209,7 +215,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -240,7 +247,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -269,7 +277,8 @@
                 "type": 4
             },
             "type": 9,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -302,7 +311,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -331,7 +341,8 @@
                 "type": 4
             },
             "type": 9,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         }
     ],
     "variables": [
@@ -364,9 +375,12 @@
         }
     ],
     "handle": {
-        "identifier": 104,
+        "identifier": 127,
         "permission": 7
     },
     "name": "Basic Industrial IO",
-    "isValidated": false
+    "isValidated": true,
+    "lastValidatedOn": "2024-04-19 17:51:21.314Z",
+    "lastModifiedOn": "2024-04-19 17:50:59.653Z",
+    "persistentVariables": []
 }

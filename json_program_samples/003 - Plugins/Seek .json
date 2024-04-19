@@ -24,7 +24,8 @@
                 "type": 4
             },
             "type": 1,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -44,56 +45,49 @@
                 }
             },
             "configuration": {
-                "waypoint_list_options": {
-                    "type_of_waypoint_global": "Angular",
-                    "use_optimal_blending": true
+                "constraint": {
+                    "acceleration": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "single_joint": 400,
+                        "tcp_rotation": 600,
+                        "tcp_translation": 5
+                    },
+                    "speed": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "single_joint": 140,
+                        "tcp_rotation": 150,
+                        "tcp_translation": 0.25
+                    }
+                },
+                "custom_frame": {
+                    "thetaX": 0,
+                    "thetaY": 0,
+                    "thetaZ": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
                 },
                 "goto_options": {
                     "option": 0
                 },
-                "constraint": {
-                    "speed": {
-                        "tcp_translation": 0.25,
-                        "tcp_rotation": 150,
-                        "edit_all_joints_in_one": true,
-                        "single_joint": 140,
-                        "joints": [
-                            null,
-                            null,
-                            null,
-                            null,
-                            null,
-                            null
-                        ]
-                    },
-                    "acceleration": {
-                        "tcp_translation": 5,
-                        "tcp_rotation": 600,
-                        "edit_all_joints_in_one": true,
-                        "single_joint": 400,
-                        "joints": [
-                            null,
-                            null,
-                            null,
-                            null,
-                            null,
-                            null
-                        ]
-                    }
-                },
-                "custom_frame": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
-                    "thetaX": 0,
-                    "thetaY": 0,
-                    "thetaZ": 0
-                },
                 "waypoint_list": [
                     {
-                        "index": "1",
-                        "name": "Home",
-                        "type_of_waypoint": "Angular",
                         "angles": [
                             -149.99884033203125,
                             0.00043108724639751017,
@@ -102,10 +96,9 @@
                             -0.0019950680434703827,
                             -0.0016846575308591127
                         ],
-                        "blending_radius_angular": 0,
-                        "waypoint_speed_limits_toggle": false,
-                        "waypoint_acceleration_limits_toggle": false,
                         "blending_radius": 0,
+                        "blending_radius_angular": 0,
+                        "index": "1",
                         "init": {
                             "angles": [
                                 -149.99713134765625,
@@ -124,6 +117,7 @@
                                 "z": 0.49646395444869995
                             }
                         },
+                        "name": "Home",
                         "pose": {
                             "thetaX": -0.002301602391526103,
                             "thetaY": -179.99948120117188,
@@ -132,7 +126,8 @@
                             "y": -0.034769829362630844,
                             "z": 0.49646395444869995
                         },
-                        "reference_frame": 3,
+                        "specific_reference_frame_toggle": false,
+                        "type_of_waypoint": "Angular",
                         "waypoint_acceleration_limits_angular_input": [
                             null,
                             null,
@@ -141,6 +136,7 @@
                             null,
                             null
                         ],
+                        "waypoint_acceleration_limits_toggle": false,
                         "waypoint_speed_limits_angular_input": [
                             null,
                             null,
@@ -148,9 +144,15 @@
                             null,
                             null,
                             null
-                        ]
+                        ],
+                        "waypoint_speed_limits_toggle": false
                     }
-                ]
+                ],
+                "waypoint_list_options": {
+                    "global_reference_frame": 3,
+                    "type_of_waypoint_global": "Angular",
+                    "use_optimal_blending": true
+                }
             },
             "storeOutputTo": {
                 "identifier": "",
@@ -158,7 +160,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         },
         {
             "branches": [],
@@ -199,7 +202,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -219,57 +223,50 @@
                 }
             },
             "configuration": {
-                "waypoint_list_options": {
-                    "type_of_waypoint_global": "Angular",
-                    "use_optimal_blending": true
+                "constraint": {
+                    "acceleration": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "single_joint": 200,
+                        "tcp_rotation": 600,
+                        "tcp_translation": 5
+                    },
+                    "speed": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "single_joint": 60,
+                        "tcp_rotation": 150,
+                        "tcp_translation": 0.25
+                    }
+                },
+                "custom_frame": {
+                    "thetaX": 0,
+                    "thetaY": 0,
+                    "thetaZ": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
                 },
                 "goto_options": {
                     "option": 1,
                     "waypoint_selection": "1-1"
                 },
-                "constraint": {
-                    "speed": {
-                        "tcp_translation": 0.25,
-                        "tcp_rotation": 150,
-                        "edit_all_joints_in_one": true,
-                        "single_joint": 60,
-                        "joints": [
-                            null,
-                            null,
-                            null,
-                            null,
-                            null,
-                            null
-                        ]
-                    },
-                    "acceleration": {
-                        "tcp_translation": 5,
-                        "tcp_rotation": 600,
-                        "edit_all_joints_in_one": true,
-                        "single_joint": 200,
-                        "joints": [
-                            null,
-                            null,
-                            null,
-                            null,
-                            null,
-                            null
-                        ]
-                    }
-                },
-                "custom_frame": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
-                    "thetaX": 0,
-                    "thetaY": 0,
-                    "thetaZ": 0
-                },
                 "waypoint_list": [
                     {
-                        "index": "1",
-                        "name": "Home",
-                        "type_of_waypoint": "Angular",
                         "angles": [
                             -150.0164794921875,
                             0,
@@ -278,10 +275,9 @@
                             0,
                             -0.009613037109375
                         ],
-                        "blending_radius_angular": 0,
-                        "waypoint_speed_limits_toggle": false,
-                        "waypoint_acceleration_limits_toggle": false,
                         "blending_radius": 0,
+                        "blending_radius_angular": 0,
+                        "index": "1",
                         "init": {
                             "angles": [
                                 -150.0164794921875,
@@ -300,6 +296,7 @@
                                 "z": 0.5080209374427795
                             }
                         },
+                        "name": "Home",
                         "pose": {
                             "thetaX": -1.7169040441513062,
                             "thetaY": 174.51400756835938,
@@ -308,9 +305,17 @@
                             "y": -0.05572355166077614,
                             "z": 0.5080209374427795
                         },
-                        "reference_frame": 3
+                        "specific_reference_frame_toggle": false,
+                        "type_of_waypoint": "Angular",
+                        "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_toggle": false
                     }
-                ]
+                ],
+                "waypoint_list_options": {
+                    "global_reference_frame": 3,
+                    "type_of_waypoint_global": "Angular",
+                    "use_optimal_blending": true
+                }
             },
             "storeOutputTo": {
                 "identifier": "",
@@ -318,7 +323,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         },
         {
             "branches": [
@@ -377,7 +383,8 @@
                 "type": 4
             },
             "type": 2,
-            "blocking": true
+            "blocking": true,
+            "version": ""
         },
         {
             "branches": [],
@@ -396,14 +403,17 @@
                     "identifier": "robotiq_plugin"
                 }
             },
-            "configuration": {},
+            "configuration": {
+                "gripper": "Gripper A"
+            },
             "storeOutputTo": {
                 "identifier": "",
                 "schemaKey": "",
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.4.0-dev.358"
         },
         {
             "branches": [],
@@ -423,8 +433,9 @@
                 }
             },
             "configuration": {
-                "velocity": 255,
-                "force": 255
+                "force": 255,
+                "gripper": "Gripper A",
+                "velocity": 255
             },
             "storeOutputTo": {
                 "identifier": "",
@@ -432,7 +443,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.4.0-dev.358"
         },
         {
             "branches": [],
@@ -452,8 +464,9 @@
                 }
             },
             "configuration": {
-                "velocity": 255,
-                "force": 255
+                "force": 255,
+                "gripper": "Gripper A",
+                "velocity": 255
             },
             "storeOutputTo": {
                 "identifier": "",
@@ -461,7 +474,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.4.0-dev.358"
         },
         {
             "branches": [],
@@ -481,33 +495,9 @@
                 }
             },
             "configuration": {
-                "waypoint_list_options": {
-                    "type_of_waypoint_global": "Cartesian",
-                    "use_optimal_blending": true
-                },
-                "goto_options": {
-                    "option": 0
-                },
                 "constraint": {
-                    "speed": {
-                        "tcp_translation": 0.25,
-                        "tcp_rotation": 150,
-                        "edit_all_joints_in_one": true,
-                        "single_joint": 60,
-                        "joints": [
-                            60,
-                            60,
-                            60,
-                            140,
-                            140,
-                            140
-                        ]
-                    },
                     "acceleration": {
-                        "tcp_translation": 5,
-                        "tcp_rotation": 600,
                         "edit_all_joints_in_one": true,
-                        "single_joint": 200,
                         "joints": [
                             200,
                             200,
@@ -515,34 +505,47 @@
                             400,
                             400,
                             400
-                        ]
+                        ],
+                        "single_joint": 200,
+                        "tcp_rotation": 600,
+                        "tcp_translation": 5
+                    },
+                    "speed": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            60,
+                            60,
+                            60,
+                            140,
+                            140,
+                            140
+                        ],
+                        "single_joint": 60,
+                        "tcp_rotation": 150,
+                        "tcp_translation": 0.25
                     }
                 },
                 "custom_frame": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
                     "thetaX": 0,
                     "thetaY": 0,
-                    "thetaZ": 0
+                    "thetaZ": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "goto_options": {
+                    "option": 0
+                },
+                "tool_frame": {
+                    "thetaX": -0.0022924013901501894,
+                    "thetaY": 179.99990844726562,
+                    "thetaZ": 59.99746322631836,
+                    "x": 0.384917676448822,
+                    "y": -0.034807078540325165,
+                    "z": 0.11184139549732208
                 },
                 "waypoint_list": [
                     {
-                        "index": "1",
-                        "name": "Waypoint #1",
-                        "type_of_waypoint": "Cartesian",
-                        "reference_frame": 3,
-                        "pose": {
-                            "x": "${Seek_output.contact_pose.x}",
-                            "y": "${Seek_output.contact_pose.y}",
-                            "z": "${Seek_output.contact_pose.z}",
-                            "thetaX": "${Seek_output.contact_pose.thetaX}",
-                            "thetaY": "${Seek_output.contact_pose.thetaY}",
-                            "thetaZ": "${Seek_output.contact_pose.thetaZ}"
-                        },
-                        "blending_radius": 0,
-                        "waypoint_speed_limits_toggle": false,
-                        "waypoint_acceleration_limits_toggle": false,
                         "angles": [
                             -149.99850463867188,
                             0.000244140625,
@@ -551,7 +554,9 @@
                             -0.000274658203125,
                             -0.001861572265625
                         ],
+                        "blending_radius": 0,
                         "blending_radius_angular": 0,
+                        "index": "1",
                         "init": {
                             "angles": [
                                 -149.99850463867188,
@@ -569,24 +574,23 @@
                                 "y": -0.034760843962430954,
                                 "z": 0.4964742660522461
                             }
-                        }
+                        },
+                        "last_reference_frame": 3,
+                        "name": "Waypoint #1",
+                        "pose": {
+                            "thetaX": "${Seek_output.contact_pose.thetaX}",
+                            "thetaY": "${Seek_output.contact_pose.thetaY}",
+                            "thetaZ": "${Seek_output.contact_pose.thetaZ}",
+                            "x": "${Seek_output.contact_pose.x}",
+                            "y": "${Seek_output.contact_pose.y}",
+                            "z": "${Seek_output.contact_pose.z}"
+                        },
+                        "specific_reference_frame_toggle": false,
+                        "type_of_waypoint": "Cartesian",
+                        "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_toggle": false
                     },
                     {
-                        "index": "2",
-                        "name": "Waypoint #2",
-                        "type_of_waypoint": "Cartesian",
-                        "reference_frame": 2,
-                        "pose": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0.05,
-                            "thetaX": 0,
-                            "thetaY": 0,
-                            "thetaZ": 0
-                        },
-                        "blending_radius": 0,
-                        "waypoint_speed_limits_toggle": false,
-                        "waypoint_acceleration_limits_toggle": false,
                         "angles": [
                             -149.99813842773438,
                             25.679931640625,
@@ -595,7 +599,9 @@
                             63.91578674316406,
                             -0.0013427734375
                         ],
+                        "blending_radius": 0,
                         "blending_radius_angular": 0,
+                        "index": "2",
                         "init": {
                             "angles": [
                                 -149.99813842773438,
@@ -613,16 +619,28 @@
                                 "y": -0.034807078540325165,
                                 "z": 0.11184139549732208
                             }
-                        }
+                        },
+                        "last_reference_frame": 2,
+                        "name": "Waypoint #2",
+                        "pose": {
+                            "thetaX": 0,
+                            "thetaY": 0,
+                            "thetaZ": 0,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0.05
+                        },
+                        "specific_reference_frame": 2,
+                        "specific_reference_frame_toggle": true,
+                        "type_of_waypoint": "Cartesian",
+                        "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_toggle": false
                     }
                 ],
-                "tool_frame": {
-                    "thetaX": -0.0022924013901501894,
-                    "thetaY": 179.99990844726562,
-                    "thetaZ": 59.99746322631836,
-                    "x": 0.384917676448822,
-                    "y": -0.034807078540325165,
-                    "z": 0.11184139549732208
+                "waypoint_list_options": {
+                    "global_reference_frame": 3,
+                    "type_of_waypoint_global": "Cartesian",
+                    "use_optimal_blending": true
                 }
             },
             "storeOutputTo": {
@@ -631,7 +649,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         },
         {
             "branches": [],
@@ -651,8 +670,9 @@
                 }
             },
             "configuration": {
-                "velocity": 255,
-                "force": 255
+                "force": 255,
+                "gripper": "Gripper A",
+                "velocity": 255
             },
             "storeOutputTo": {
                 "identifier": "",
@@ -660,7 +680,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.4.0-dev.358"
         },
         {
             "branches": [],
@@ -680,33 +701,9 @@
                 }
             },
             "configuration": {
-                "waypoint_list_options": {
-                    "type_of_waypoint_global": "Cartesian",
-                    "use_optimal_blending": true
-                },
-                "goto_options": {
-                    "option": 0
-                },
                 "constraint": {
-                    "speed": {
-                        "tcp_translation": 0.25,
-                        "tcp_rotation": 150,
-                        "edit_all_joints_in_one": true,
-                        "single_joint": 60,
-                        "joints": [
-                            60,
-                            60,
-                            60,
-                            140,
-                            140,
-                            140
-                        ]
-                    },
                     "acceleration": {
-                        "tcp_translation": 5,
-                        "tcp_rotation": 600,
                         "edit_all_joints_in_one": true,
-                        "single_joint": 200,
                         "joints": [
                             200,
                             200,
@@ -714,34 +711,47 @@
                             400,
                             400,
                             400
-                        ]
+                        ],
+                        "single_joint": 200,
+                        "tcp_rotation": 600,
+                        "tcp_translation": 5
+                    },
+                    "speed": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            60,
+                            60,
+                            60,
+                            140,
+                            140,
+                            140
+                        ],
+                        "single_joint": 60,
+                        "tcp_rotation": 150,
+                        "tcp_translation": 0.25
                     }
                 },
                 "custom_frame": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
                     "thetaX": 0,
                     "thetaY": 0,
-                    "thetaZ": 0
+                    "thetaZ": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "goto_options": {
+                    "option": 0
+                },
+                "tool_frame": {
+                    "thetaX": 0.00021050208306405693,
+                    "thetaY": 179.9992218017578,
+                    "thetaZ": 60.000003814697266,
+                    "x": 0.3848518431186676,
+                    "y": -0.034760843962430954,
+                    "z": 0.4964742660522461
                 },
                 "waypoint_list": [
                     {
-                        "index": "1",
-                        "name": "Waypoint #1",
-                        "type_of_waypoint": "Cartesian",
-                        "reference_frame": 2,
-                        "pose": {
-                            "x": 0,
-                            "y": 0,
-                            "z": -0.1,
-                            "thetaX": 0,
-                            "thetaY": 0,
-                            "thetaZ": 0
-                        },
-                        "blending_radius": 0,
-                        "waypoint_speed_limits_toggle": false,
-                        "waypoint_acceleration_limits_toggle": false,
                         "angles": [
                             -149.99832153320312,
                             0.0006103515625,
@@ -750,7 +760,9 @@
                             -0.000091552734375,
                             -0.002044677734375
                         ],
+                        "blending_radius": 0,
                         "blending_radius_angular": 0,
+                        "index": "1",
                         "init": {
                             "angles": [
                                 -149.99832153320312,
@@ -768,24 +780,24 @@
                                 "y": -0.034760843962430954,
                                 "z": 0.4964742660522461
                             }
-                        }
-                    },
-                    {
-                        "index": "2",
-                        "name": "Waypoint #2",
-                        "type_of_waypoint": "Cartesian",
-                        "reference_frame": 2,
+                        },
+                        "last_reference_frame": 2,
+                        "name": "Waypoint #1",
                         "pose": {
-                            "x": -0.1,
-                            "y": -0.1,
-                            "z": 0,
                             "thetaX": 0,
                             "thetaY": 0,
-                            "thetaZ": 0
+                            "thetaZ": 0,
+                            "x": 0,
+                            "y": 0,
+                            "z": -0.1
                         },
-                        "blending_radius": 0,
-                        "waypoint_speed_limits_toggle": false,
+                        "specific_reference_frame": 2,
+                        "specific_reference_frame_toggle": true,
+                        "type_of_waypoint": "Cartesian",
                         "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_toggle": false
+                    },
+                    {
                         "angles": [
                             -149.99832153320312,
                             0.0006103515625,
@@ -794,7 +806,9 @@
                             -0.000457763671875,
                             -0.002044677734375
                         ],
+                        "blending_radius": 0,
                         "blending_radius_angular": 0,
+                        "index": "2",
                         "init": {
                             "angles": [
                                 -149.99832153320312,
@@ -812,24 +826,24 @@
                                 "y": -0.034760843962430954,
                                 "z": 0.4964742660522461
                             }
-                        }
-                    },
-                    {
-                        "index": "3",
-                        "name": "Waypoint #3",
-                        "type_of_waypoint": "Cartesian",
-                        "reference_frame": 2,
+                        },
+                        "last_reference_frame": 2,
+                        "name": "Waypoint #2",
                         "pose": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0.1,
                             "thetaX": 0,
                             "thetaY": 0,
-                            "thetaZ": 0
+                            "thetaZ": 0,
+                            "x": -0.1,
+                            "y": -0.1,
+                            "z": 0
                         },
-                        "blending_radius": 0,
-                        "waypoint_speed_limits_toggle": false,
+                        "specific_reference_frame": 2,
+                        "specific_reference_frame_toggle": true,
+                        "type_of_waypoint": "Cartesian",
                         "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_toggle": false
+                    },
+                    {
                         "angles": [
                             -149.99832153320312,
                             0.000244140625,
@@ -838,7 +852,9 @@
                             -0.000274658203125,
                             -0.002044677734375
                         ],
+                        "blending_radius": 0,
                         "blending_radius_angular": 0,
+                        "index": "3",
                         "init": {
                             "angles": [
                                 -149.99832153320312,
@@ -856,16 +872,28 @@
                                 "y": -0.034760843962430954,
                                 "z": 0.4964742660522461
                             }
-                        }
+                        },
+                        "last_reference_frame": 2,
+                        "name": "Waypoint #3",
+                        "pose": {
+                            "thetaX": 0,
+                            "thetaY": 0,
+                            "thetaZ": 0,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0.1
+                        },
+                        "specific_reference_frame": 2,
+                        "specific_reference_frame_toggle": true,
+                        "type_of_waypoint": "Cartesian",
+                        "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_toggle": false
                     }
                 ],
-                "tool_frame": {
-                    "thetaX": 0.00021050208306405693,
-                    "thetaY": 179.9992218017578,
-                    "thetaZ": 60.000003814697266,
-                    "x": 0.3848518431186676,
-                    "y": -0.034760843962430954,
-                    "z": 0.4964742660522461
+                "waypoint_list_options": {
+                    "global_reference_frame": 3,
+                    "type_of_waypoint_global": "Cartesian",
+                    "use_optimal_blending": true
                 }
             },
             "storeOutputTo": {
@@ -874,7 +902,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         },
         {
             "branches": [],
@@ -894,8 +923,9 @@
                 }
             },
             "configuration": {
-                "velocity": 255,
-                "force": 255
+                "force": 255,
+                "gripper": "Gripper A",
+                "velocity": 255
             },
             "storeOutputTo": {
                 "identifier": "",
@@ -903,7 +933,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.4.0-dev.358"
         },
         {
             "branches": [],
@@ -923,33 +954,9 @@
                 }
             },
             "configuration": {
-                "waypoint_list_options": {
-                    "type_of_waypoint_global": "Cartesian",
-                    "use_optimal_blending": true
-                },
-                "goto_options": {
-                    "option": 0
-                },
                 "constraint": {
-                    "speed": {
-                        "tcp_translation": 0.25,
-                        "tcp_rotation": 150,
-                        "edit_all_joints_in_one": true,
-                        "single_joint": 60,
-                        "joints": [
-                            60,
-                            60,
-                            60,
-                            140,
-                            140,
-                            140
-                        ]
-                    },
                     "acceleration": {
-                        "tcp_translation": 5,
-                        "tcp_rotation": 600,
                         "edit_all_joints_in_one": true,
-                        "single_joint": 200,
                         "joints": [
                             200,
                             200,
@@ -957,34 +964,47 @@
                             400,
                             400,
                             400
-                        ]
+                        ],
+                        "single_joint": 200,
+                        "tcp_rotation": 600,
+                        "tcp_translation": 5
+                    },
+                    "speed": {
+                        "edit_all_joints_in_one": true,
+                        "joints": [
+                            60,
+                            60,
+                            60,
+                            140,
+                            140,
+                            140
+                        ],
+                        "single_joint": 60,
+                        "tcp_rotation": 150,
+                        "tcp_translation": 0.25
                     }
                 },
                 "custom_frame": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
                     "thetaX": 0,
                     "thetaY": 0,
-                    "thetaZ": 0
+                    "thetaZ": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "goto_options": {
+                    "option": 0
+                },
+                "tool_frame": {
+                    "thetaX": -0.3816663920879364,
+                    "thetaY": -176.33602905273438,
+                    "thetaZ": 49.832679748535156,
+                    "x": 0.5008988380432129,
+                    "y": -0.06355737894773483,
+                    "z": 0.37487149238586426
                 },
                 "waypoint_list": [
                     {
-                        "index": "1",
-                        "name": "Waypoint #1",
-                        "type_of_waypoint": "Cartesian",
-                        "reference_frame": 2,
-                        "pose": {
-                            "x": 0,
-                            "y": 0,
-                            "z": -0.05,
-                            "thetaX": 0,
-                            "thetaY": 0,
-                            "thetaZ": 0
-                        },
-                        "blending_radius": 0,
-                        "waypoint_speed_limits_toggle": false,
-                        "waypoint_acceleration_limits_toggle": false,
                         "angles": [
                             -155.19171142578125,
                             17.70977783203125,
@@ -993,7 +1013,9 @@
                             12.3021240234375,
                             -16.16217041015625
                         ],
+                        "blending_radius": 0,
                         "blending_radius_angular": 0,
+                        "index": "1",
                         "init": {
                             "angles": [
                                 -155.19171142578125,
@@ -1011,16 +1033,28 @@
                                 "y": -0.06355737894773483,
                                 "z": 0.37487149238586426
                             }
-                        }
+                        },
+                        "last_reference_frame": 2,
+                        "name": "Waypoint #1",
+                        "pose": {
+                            "thetaX": 0,
+                            "thetaY": 0,
+                            "thetaZ": 0,
+                            "x": 0,
+                            "y": 0,
+                            "z": -0.05
+                        },
+                        "specific_reference_frame": 2,
+                        "specific_reference_frame_toggle": true,
+                        "type_of_waypoint": "Cartesian",
+                        "waypoint_acceleration_limits_toggle": false,
+                        "waypoint_speed_limits_toggle": false
                     }
                 ],
-                "tool_frame": {
-                    "thetaX": -0.3816663920879364,
-                    "thetaY": -176.33602905273438,
-                    "thetaZ": 49.832679748535156,
-                    "x": 0.5008988380432129,
-                    "y": -0.06355737894773483,
-                    "z": 0.37487149238586426
+                "waypoint_list_options": {
+                    "global_reference_frame": 3,
+                    "type_of_waypoint_global": "Cartesian",
+                    "use_optimal_blending": true
                 }
             },
             "storeOutputTo": {
@@ -1029,7 +1063,8 @@
                 "type": 4
             },
             "type": 4,
-            "blocking": true
+            "blocking": true,
+            "version": "1.3.0-dev.615"
         }
     ],
     "variables": [
@@ -1062,9 +1097,12 @@
         }
     ],
     "handle": {
-        "identifier": 29,
+        "identifier": 125,
         "permission": 7
     },
     "name": "Seek ",
-    "isValidated": false
+    "isValidated": true,
+    "lastValidatedOn": "2024-04-19 17:49:12.935Z",
+    "lastModifiedOn": "2024-04-19 17:46:19.353Z",
+    "persistentVariables": []
 }
