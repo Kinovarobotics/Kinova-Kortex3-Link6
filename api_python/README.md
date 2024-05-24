@@ -75,7 +75,7 @@ python3 --ip 192.168.2.22 <example-file>.py
 ```
 
 
-Before starting, ensure that you run the test in a safe area since some examples contain movement. Also, verify that your robot is correctly fixed to the working surface.
+**Before starting, ensure that you run the test in a safe area since some examples contain wide movements at full speed (default behaviour, but you can reduce speeds by modyfing the example code). Also, verify that your robot is correctly fixed to the working surface.**
 
 Prerequisites:
 + The examples require a wired network connection to your computer
