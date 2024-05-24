@@ -156,7 +156,6 @@ def example_trajectory(base: BaseClient):
     
     #Add waypoints to waypoint list
     wptlist.waypoints.MergeFrom(array_wpts)
-    wptlist.duration = 60 # in seconds
     result = base.ValidateWaypointList(wptlist)
 
     # If the list is valid, execute the waypoint list. If not, print an error
