@@ -129,12 +129,12 @@ def example_trajectory(base: BaseClient):
 
     # Array of waypoints and their information
     waypointsDefinition = (
-    (0.40, -0.10, 0.50, 0.0, kTheta_x, kTheta_y, kTheta_z), 
-    (0.50, 0.0, 0.80, 0.0, kTheta_x, kTheta_y, kTheta_z), 
-    (0.60, 0.35, 0.45, 0.0,kTheta_x, kTheta_y, kTheta_z),
+    (0.40, -0.10, 0.30, 0.0, kTheta_x, kTheta_y, kTheta_z), 
+    (0.50, 0.0, 0.40, 0.0, kTheta_x, kTheta_y, kTheta_z), 
+    (0.50, 0.35, 0.45, 0.0,kTheta_x, kTheta_y, kTheta_z),
     (0.50, -0.25, 0.30, 0.0,kTheta_x, kTheta_y, kTheta_z),
     (0.30, 0.30, 0.25, 0.0,kTheta_x, kTheta_y, kTheta_z),
-    (0.45, -0.25, 0.60, 0.0,kTheta_x, kTheta_y, kTheta_z),
+    (0.45, -0.25, 0.40, 0.0,kTheta_x, kTheta_y, kTheta_z),
     (0.35, 0.20, 0.30, 0.0,kTheta_x, kTheta_y, kTheta_z) 
     )
 

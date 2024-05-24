@@ -118,7 +118,7 @@ def example_angular_trajectory(base):
     waypointsDefinition = [
         ([40, -22, 75, 0, 10, 20], 1),
         ([40, -20, 70, 0, 11, 21], 1),
-        ([40, -22, 75, 0, 10, 20], 1),
+        ([40, -22, 75, 0, 10, 20], 0),
     ]
 
     # Create a WaypointList to hold the waypoints
