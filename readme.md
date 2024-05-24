@@ -81,6 +81,7 @@ Before getting started, please review the release notes to learn about any limit
 
 | Firmware     | Release notes      | API |
 | :----------: | :-----------: | :-----------:|
+| [3.3.0](https://artifactory.kinovaapps.com/ui/native/generic-local-public/kortex/link6/3.3.0/link6-3.3.0-r.6.swu) | [release notes](https://artifactory.kinovaapps.com:443/artifactory/generic-documentation-public/Documentation/Link%206/Technical%20documentation/User%20Guide/EN-eRN-020-Link-6-release-notes.pdf) | [3.3.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.3.0/kortex_api-3.3.0.2-py3-none-any.whl)|
 | [3.2.0](https://artifactory.kinovaapps.com:443/artifactory/generic-local-public/kortex/link6/3.2.0/link6-3.2.0-r.38.swu)   | [release notes](https://artifactory.kinovaapps.com:443/artifactory/generic-documentation-public/Documentation/Link%206/Technical%20documentation/User%20Guide/EN-eRN-020-Link-6-release-notes.pdf)    | [3.2.0](https://artifactory.kinovaapps.com/artifactory/generic-public/kortex/API/3.2.0/kortex_api-3.2.0.9-py3-none-any.whl)|
 
 </details>

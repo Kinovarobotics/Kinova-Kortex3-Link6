@@ -92,10 +92,10 @@ def example_move_to_home_position(base, program_runner):
 # This function populates an Angular waypoint object with the data provided by an array
 def populate_angular_coordinates(waypointInformation):
     """
-    Populate AngularWaypoint message with provided angular coordinates, duration, and blending.
+    Populate AngularWaypoint message with provided angular coordinates and blending.
 
     Args:
-        waypointInformation (tuple): Tuple containing angular coordinates (list), duration (float), and blending (float).
+        waypointInformation (tuple): Tuple containing angular coordinates (list), and blending (float).
 
     Returns:
         Base_pb2.AngularWaypoint: AngularWaypoint message populated with the provided information.
@@ -103,11 +103,10 @@ def populate_angular_coordinates(waypointInformation):
     waypoint = Base_pb2.AngularWaypoint()
 
     # Extract values from the tuple
-    angles_list, duration, blending = waypointInformation
+    angles_list, blending = waypointInformation
 
     # Populate AngularWaypoint fields
     waypoint.angles.extend(map(float, angles_list))  # Array of 6 angles, in degrees
-    waypoint.duration = duration  # Duration in seconds
     waypoint.blending = blending  # Blending factor, float from 0 to 1 (1 being optimal blending)
 
     return waypoint
@@ -115,11 +114,11 @@ def example_angular_trajectory(base):
     # Set the operating mode to AUTO
     change_operating_mode(base, "OPERATING_MODE_AUTO")
 
-    # Define waypoints with angles, duration, and blending values
+    # Define waypoints with angles and blending values
     waypointsDefinition = [
-        ([40, -22, 75, 0, 10, 20], 5, 1),
-        ([40, -20, 70, 0, 11, 21], 5, 1),
-        ([40, -22, 75, 0, 10, 20], 5, 1),
+        ([40, -22, 75, 0, 10, 20], 1),
+        ([40, -20, 70, 0, 11, 21], 1),
+        ([40, -22, 75, 0, 10, 20], 0),
     ]
 
     # Create a WaypointList to hold the waypoints
@@ -127,11 +126,11 @@ def example_angular_trajectory(base):
     wptlist.use_optimal_blending = True
 
     # Iterate over waypoints and add them to the WaypointList
-    for i, (angles, duration, blending) in enumerate(waypointsDefinition):
+    for i, (angles, blending) in enumerate(waypointsDefinition):
         waypoint = wptlist.waypoints.add()
         waypoint.name = f"waypoint_{i}"
         # Populate Angular waypoint coordinates using the provided function
-        waypoint.angular_waypoint.CopyFrom(populate_angular_coordinates((angles, duration, blending)))
+        waypoint.angular_waypoint.CopyFrom(populate_angular_coordinates((angles, blending)))
 
     # Validate the waypoint list
     result = base.ValidateWaypointList(wptlist)
