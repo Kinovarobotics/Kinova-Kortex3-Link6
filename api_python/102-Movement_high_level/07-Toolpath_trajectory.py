@@ -59,11 +59,13 @@ def example_move_to_home_position(base, program_runner):
     programs = program_runner.ReadAllPrograms()
     programs_map = {p.name: p.handle.identifier for p in programs.programs}
 
-    # In order to move to the home position, you must go on the robot's Teach Pendant and create a program named "Newhome". 
-    # This program consist of a single waypoint tile, that has a single waypoint to a desired home position. 
-    # This position is not the default, factory setting, home position of the robot. 
-    # It is a position chosen by the user, that the robot can safely reach depending on the robot's surroundings.
-    # The program's name can be different than "Newhome", as long as that name is adjusted on line 68 of the code.
+    """
+    In order to move to the home position, you must go on the robot's Teach Pendant and create a program named "Newhome". 
+    This program consist of a single waypoint tile, that has a single waypoint to a desired home position. 
+    This position is not the default, factory setting, home position of the robot. 
+    It is a position chosen by the user, that the robot can safely reach depending on the robot's surroundings.
+    The program's name can be different than "Newhome", as long as that name is adjusted on line 68 of the code.
+    """
 
     program_name = 'Newhome'
 
@@ -115,8 +117,8 @@ def populate_arc_coordinates(waypointInformation):
     waypoint.angular_acceleration = waypointInformation[13] # in degree /secondes
     return waypoint
 
-# This function populates a toolpath straight line waypoint object with the data provided by an array of numbers
-def populate_line_coordinates(waypointInformation):        
+# This function populates a toolpath straight segment waypoint object with the data provided by an array of numbers
+def populate_segment_coordinates(waypointInformation):        
 
     # This function links the information in waypointDefinitions array to its corresponding data
     waypoint = Base_pb2.StraightSegmentToolpath()
@@ -137,15 +139,20 @@ def example_trajectory(base: BaseClient):
     change_operating_mode(base, "OPERATING_MODE_AUTO")
     
     # define the angular orientation poses of the waypoints
-    kTheta_x = 0.8
-    kTheta_y = 179.7
-    kTheta_z = 94.1
+    kTheta_x = 0
+    kTheta_y = 180
+    kTheta_z = 90
 
-    # Array of waypoints and their information as described in fonction populate_line_coordinates or populate_arc_coordinates depending on waypoint type
-    # always need to start by a "line" waypoint
+    """
+    Array of waypoints and their information as described in fonction populate_segment_coordinates or populate_arc_coordinates depending on waypoint type
+    always need to start by a "segment" waypoint
+    
+    (pose_X,pose_Y,pose_Z,blending_radius,pose_theta_X,pose_theta_Y,pose_theta_Z,"segment",linear_speed,linear_acceleration)
+    (pose_X,pose_Y,pose_Z,blending_radius,pose_theta_X,pose_theta_Y,pose_theta_Z,"arc",linear_speed,linear_acceleration,via_point_X,via_point_Y,via_point_Z,angular_acceleration)
+    """
     waypointsDefinition = (
-    (0.646, 0.158, 0.397, 0.0, kTheta_x, kTheta_y, kTheta_z,"line",0.2,0.1), 
-    (0.646, -0.039, 0.397, 0.0, kTheta_x, kTheta_y, kTheta_z,"line",0.2,0.1),
+    (0.646, 0.158, 0.397, 0.0, kTheta_x, kTheta_y, kTheta_z,"segment",0.2,0.1), 
+    (0.646, -0.039, 0.397, 0.0, kTheta_x, kTheta_y, kTheta_z,"segment",0.2,0.1),
     (0.646, -0.39, 0.397, 0.0, kTheta_x, kTheta_y, 70,"arc",0.1,2.5, 0.776,-0.131,0.397,25)
     )
 
@@ -155,21 +162,16 @@ def example_trajectory(base: BaseClient):
     wptlist.use_optimal_blending = True
             
     #Create waypoints from the waypointsDefinition array according to its waypoint type
-    array_wpts = np.array([])
     index = 0
     for i in range(0,waypoint_count):
-        np.append(array_wpts, waypointsDefinition[i])
         waypoint = wptlist.waypoints.add()
         waypoint.name = "waypoint_" + str(index)
         if waypointsDefinition[i][7] == "arc":    
             waypoint.arc_point_toolpath.CopyFrom(populate_arc_coordinates(waypointsDefinition[i]))
-        elif  waypointsDefinition[i][7] == "line":   
-            waypoint.straight_segment_toolpath.CopyFrom(populate_line_coordinates(waypointsDefinition[i]))
+        elif  waypointsDefinition[i][7] == "segment":   
+            waypoint.straight_segment_toolpath.CopyFrom(populate_segment_coordinates(waypointsDefinition[i]))
         index = index + 1
     
-    #Add waypoints to waypoint list
-    wptlist.waypoints.MergeFrom(array_wpts)
-    wptlist.duration = 60 # in seconds
     result = base.ValidateWaypointList(wptlist)
 
     # If the list is valid, execute the waypoint list. If not, print an error
