@@ -57,7 +57,7 @@ another output.
 3.  Click on State in the Settings section, and choose High or Low.
 
 
-![ScreenShot](Images/BasicIO2.png)
+![ScreenShot](Images/BasicIO1.png)
 
 
 Here is how to change Input read by the Read Input tile,
@@ -69,7 +69,7 @@ Here is how to change Input read by the Read Input tile,
 3.  Choose the desired Input from the dropdown menu.
 
 
-![ScreenShot](Images/BasicIO3.png)
+![ScreenShot](Images/BasicIO2.png)
 
 
 Finally, here is how to change the Input that the program waits for in a
@@ -91,7 +91,7 @@ Wait for Input tile.
     reached the chosen state.
 
 
-![ScreenShot](Images/BasicIO4.png)
+![ScreenShot](Images/BasicIO3.png)
 
 &nbsp;
 
