@@ -91,7 +91,13 @@ spaced positions needed. To do so,
 1.  Click on the Matrix tile
 
 2.  In the parameters menu, configure the matrix size by choosing a
-     number of rows, a number of columns and a number of layers
+     number of rows, a number of columns and a number of layers.
+     The check box (Bottom to top) in the Layers section decide in what order the
+     layers will be use but also in what direction they will be create. If Bottom to top
+     is checked the layers will be create over the first layer if not the layers will be 
+     created under the first layer. 
+
+
 
 
 ![ScreenShot](Images/Basic2.png)
