@@ -23,7 +23,7 @@
 
 <a id="markdown-overview" name="overview"></a>
 ## Overview
-The Python Kortex API offers one mechanism to call a method: a standard blocking method.
+The Python KINOVA KORTEX 3™ API offers one mechanism to call a method: a standard blocking method.
 
 
 <a id="markdown-blocking-function" name="function"></a>

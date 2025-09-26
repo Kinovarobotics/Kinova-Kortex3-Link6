@@ -23,7 +23,7 @@ The official repository contains documentation and examples explaining how to us
 
 - [Description](#description)
 - [Licensing](#licensing)
-- [Role of Google Protocol Buffer in Kortex API](#role-of-google-protocol-buffer-in-kortex-api)
+- [Role of Google Protocol Buffer in KINOVA KORTEX 3™ API](#role-of-google-protocol-buffer-in-kortex-api)
   - [Quick Start for Python users](#quick-start-for-python-users)
   - [Quick Start for Modbus and Ethernet IP users](#quick-start-for-modbus-ethernet-ip-users)
 - [Download links](#download-links)
@@ -38,9 +38,9 @@ The official repository contains documentation and examples explaining how to us
 This repository is licenced under the [BSD 3-Clause "Revised" License](./LICENSE) 
 
 <a id="markdown-role-of-google-protobuf-in-kortex-api" name="role-of-google-protobuf-in-kortex-api"></a>
-# Role of Google Protocol Buffer in Kortex API 
+# Role of Google Protocol Buffer in KINOVA KORTEX 3™ API 
 
-The Kortex API uses Google Protocol Buffer message objects<sup>**[1](#useful-links)**</sup> to exchange data between client and server.  
+The KINOVA KORTEX 3™ API uses Google Protocol Buffer message objects<sup>**[1](#useful-links)**</sup> to exchange data between client and server.  
 
 Google Protocol Buffer offers structured data objects with standard methods for each member field:  
 + structured, nested objects
@@ -50,7 +50,7 @@ Google Protocol Buffer offers structured data objects with standard methods for 
 + many helpers (e.g. serialize/deserialize, I/O functions)
   
 
-When using the Kortex API a developer will need to understand the Google Protocol Buffer feature set to maximize their efficiency.  
+When using the KINOVA KORTEX 3™ API a developer will need to understand the Google Protocol Buffer feature set to maximize their efficiency.  
 
 
 <a id="markdown-quick-start-howto-python" name="quick-start-howto-python"></a>
@@ -77,7 +77,7 @@ The robot handle the communication via  Modbus  and Ethernet/IP. This is done vi
 
 <a id="markdown-api-download-links" name="api-download-links"></a>
 # Download links
-Before getting started, please review the release notes to learn about any limitations or known issues of the Kortex API for Link 6. Ensure proper training from reviewing the user guide on how to safely use the product.
+Before getting started, please review the release notes to learn about any limitations or known issues of the KINOVA KORTEX 3™ API for Link 6. Ensure proper training from reviewing the user guide on how to safely use the product.
 
 | Firmware     | Release notes      | API |
 | :----------: | :-----------: | :-----------:|

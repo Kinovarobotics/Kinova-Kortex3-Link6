@@ -25,7 +25,7 @@ If you have any questions, reach out to us at support@kinova.ca.
 - [Description](#description)
 - [Setup (Python environment)](#setup-python-environment)
   - [Required Python version and module](#required-python-version-and-module)
-  - [Install Kortex Python API and required dependencies](#install-kortex-python-api-and-required-dependencies)
+  - [Install KINOVA KORTEX 3™ Python API and required dependencies](#install-kortex-python-api-and-required-dependencies)
 - [How to use the examples](#how-to-use-the-examples)
 - [Reference](#reference)
   - [useful links](#useful-links)
@@ -45,7 +45,7 @@ If you have any questions, reach out to us at support@kinova.ca.
 Refer to the python quick start for Python installation details: [python_quick_start](../linked_md/python_quick_start.md)
 
 <a id="markdown-install-python-module-kortex-api--the-needed-dependencies" name="install-python-module-kortex-api--the-needed-dependencies"></a>
-## Install Kortex Python API and required dependencies  
+## Install KINOVA KORTEX 3™ Python API and required dependencies  
 
 Install what is needed to run the examples via a downloaded whl file (Python wheel package).
 
