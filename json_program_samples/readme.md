@@ -1,5 +1,5 @@
 <!--
-* KINOVA (R) KORTEX 3 (TM)
+* KINOVA (R) KORTEX (TM) 3
 *
 * Copyright (c) 2018 Kinova inc. All rights reserved.
 *

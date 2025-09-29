@@ -17,7 +17,7 @@ Robotiq Inc. To use the gripper, the Robotiq Gripper Plugin must be
 downloaded from the Kinova website, by clicking on the Resources menu \> 
 Plugins. Refer to the Link 6 User Guide or to the Robotiq Plugin
 documentation for more detail. Download the file to a computer or an USB
-stick, log in on KINOVA KORTEX 3™ Web App, click on the Menu \> Systems \> Plugins
+stick, log in on KINOVA KORTEX™ 3 Web App, click on the Menu \> Systems \> Plugins
 \ click on the blue Add (+) Icon \> Select file \> Select the file
 downloaded from the Kinova website \> Install. Once the file has been
 installed, click on Robotiq Gripper Plugin and set Activate Plugin to
@@ -212,7 +212,7 @@ Robotiq Inc. To use the gripper, the Robotiq Gripper Plugin must be
 downloaded from the Kinova website, by clicking on the Resources menu \> 
 Plugins. Refer to the Link 6 User Guide or to the Robotiq Plugin
 documentation for more detail. Download the file to a computer or an USB
-stick, log in on KINOVA KORTEX 3™ Web App, click on the Menu \> Systems \> Plugins
+stick, log in on KINOVA KORTEX™ 3 Web App, click on the Menu \> Systems \> Plugins
 \ click on the blue Add (+) Icon \> Select file \> Select the file
 downloaded from the Kinova website \> Install. Once the file has been
 installed, click on Robotiq Gripper Plugin and set Activate Plugin to
@@ -293,7 +293,7 @@ Robotiq Inc. To use the gripper, the Robotiq Gripper Plugin must be
 downloaded from the Kinova website, by clicking on the Resources menu \> 
 Plugins. Refer to the Link 6 User Guide or to the Robotiq Plugin
 documentation for more detail. Download the file to a computer or an USB
-stick, log in on KINOVA KORTEX 3™ Web App, click on the Menu \> Systems \> Plugins
+stick, log in on KINOVA KORTEX™ 3 Web App, click on the Menu \> Systems \> Plugins
 \ click on the blue Add (+) Icon \> Select file \> Select the file
 downloaded from the Kinova website \> Install. Once the file has been
 installed, click on Robotiq Gripper Plugin and set Activate Plugin to
