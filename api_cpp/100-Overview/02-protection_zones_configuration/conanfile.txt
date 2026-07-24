@@ -1,5 +1,0 @@
-[requires]
-kortex_api_cpp/3.4.0-r.15-public@link6/stable
-
-[generators]
-cmake
