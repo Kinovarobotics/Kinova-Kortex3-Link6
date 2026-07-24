@@ -49,7 +49,7 @@ Refer to the python quick start for Python installation details: [python_quick_s
 
 Install what is needed to run the examples via a downloaded whl file (Python wheel package).
 
-The whl file can be downloaded via the Kinova Artifactory: [kortex_api](https://artifactory.kinovaapps.com/artifactory/generic-public/kortex/API/3.2.0/kortex_api-3.2.0.9-py3-none-any.whl)  
+The whl file can be downloaded from the [Download links](../readme.md#download-links) section of the main README.  
 
 On Linux:
 

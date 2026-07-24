@@ -15,7 +15,7 @@
 <a id="markdown-description" name="description"></a>
 # Description
 
-The official repository contains documentation and examples explaining how to use the KINOVA<sup>®</sup> KORTEX™ 3 API client with Python. The repository has been tested on Windows 10 and Ubuntu 20.04.
+The official repository contains documentation and examples explaining how to use the KINOVA<sup>®</sup> KORTEX™ 3 API client with Python and C++. The repository has been tested on Windows 10 and Ubuntu 20.04.
 
 <h1>Table of Contents</h1>
 
@@ -25,6 +25,7 @@ The official repository contains documentation and examples explaining how to us
 - [Licensing](#licensing)
 - [Role of Google Protocol Buffer in KINOVA KORTEX™ 3 API](#role-of-google-protocol-buffer-in-kortex-api)
   - [Quick Start for Python users](#quick-start-for-python-users)
+  - [Quick Start for C++ users](#quick-start-for-c-users)
   - [Quick Start for Modbus and Ethernet IP users](#quick-start-for-modbus-ethernet-ip-users)
 - [Download links](#download-links)
 - [Build and Run instructions](#build-and-run-instructions)
@@ -64,7 +65,18 @@ When using the KINOVA KORTEX™ 3 API a developer will need to understand the Go
   - [Transport / Router / Session / Notification](./linked_md/python_transport_router_session_notif.md)
   - [Device routing](./linked_md/python_device_routing.md)
   - [Error management](./linked_md/python_error_management.md)
-  - [Examples](./api_python/readme.md)
+  - [Examples](./api_python/README.md)
+
+<a id="markdown-quick-start-howto-cpp" name="quick-start-howto-cpp"></a>
+# Quick Start for C++ users
+
+  To build the C++ examples you will need CMake, a C++17 compiler, and optionally the Conan package manager.
+
+  - [API mechanism](./linked_md/cpp_api_mechanism.md)
+  - [Transport / Router / Session / Notification](./linked_md/cpp_transport_router_session_notif.md)
+  - [Device routing](./linked_md/cpp_device_routing.md)
+  - [Error management](./linked_md/cpp_error_management.md)
+  - [Examples](./api_cpp/README.md)
 
 <a id="markdown-quick-start-howto-modbus" name="quick-start-howto-modbus"></a>
 # Using Modbus and Ethernet IP Users
@@ -79,17 +91,23 @@ The robot handle the communication via  Modbus  and Ethernet/IP. This is done vi
 # Download links
 Before getting started, please review the release notes to learn about any limitations or known issues of the KINOVA KORTEX™ 3 API for Link 6. Ensure proper training from reviewing the user guide on how to safely use the product.
 
-| Firmware     | Release notes      | API |
-| :----------: | :-----------: | :-----------:|
-| [3.3.0](https://artifactory.kinovaapps.com/ui/native/generic-local-public/kortex/link6/3.3.0/link6-3.3.0-r.6.swu) | [release notes](https://artifactory.kinovaapps.com:443/artifactory/generic-documentation-public/Documentation/Link%206/Technical%20documentation/User%20Guide/EN-eRN-020-Link-6-release-notes.pdf) | [3.3.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.3.0/kortex_api-3.3.0.2-py3-none-any.whl)|
-| [3.2.0](https://artifactory.kinovaapps.com:443/artifactory/generic-local-public/kortex/link6/3.2.0/link6-3.2.0-r.38.swu)   | [release notes](https://artifactory.kinovaapps.com:443/artifactory/generic-documentation-public/Documentation/Link%206/Technical%20documentation/User%20Guide/EN-eRN-020-Link-6-release-notes.pdf)    | [3.2.0](https://artifactory.kinovaapps.com/artifactory/generic-public/kortex/API/3.2.0/kortex_api-3.2.0.9-py3-none-any.whl)|
+> **C++ API:** Each package is compiled against a specific protobuf version shown in the table below. With Conan (Option A), pass the matching `protobuf_version` option to `conan install` as described in the [C++ examples readme](./api_cpp/README.md#build--option-a-conan). For CMake-only builds (Option B) you must install the matching version.
+
+| Firmware | Release notes | Python API | C++ API docs | Python API docs | C++ API (Jetson) | C++ API (Linux, Ubuntu 20) | C++ API (Linux, Ubuntu 22) | C++ API (Linux, Ubuntu 24) | C++ API (Linux, Default) | C++ API (Pi5) |
+| :----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| **Required protobuf** | — | — | — | — | **3.20.0** | **3.6.1** | **3.12.4** | **3.21** | **3.20.0** | **3.20.0** |
+| [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-local-public/kortex/link6/3.4.0/cobot-3.4.0-r.3.swu) | [release notes](https://artifactory.kinovaapps.com:443/artifactory/generic-documentation-public/Documentation/Link%206/Technical%20documentation/User%20Guide/EN-eRN-020-Link-6-release-notes.pdf) | [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.4.0/kortex_api-3.4.0.15-py3-none-any.whl) | [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.4.0/kortex_api_cpp_3.4.0-documentation.zip) | [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.4.0/kortex_api_python_3.4.0-documentation.zip) | [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.4.0/jetson.zip) | [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.4.0/ubuntu_20.zip) | [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.4.0/ubuntu_22.zip) | [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.4.0/ubuntu_24.zip) | [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.4.0/proto_3_20_0.zip) | [3.4.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.4.0/rpi5.zip) |
+| [3.3.0](https://artifactory.kinovaapps.com/ui/native/generic-local-public/kortex/link6/3.3.0/link6-3.3.0-r.6.swu) | [release notes](https://artifactory.kinovaapps.com:443/artifactory/generic-documentation-public/Documentation/Link%206/Technical%20documentation/User%20Guide/EN-eRN-020-Link-6-release-notes.pdf) | [3.3.0](https://artifactory.kinovaapps.com/ui/native/generic-public/kortex/API/3.3.0/kortex_api-3.3.0.2-py3-none-any.whl) | - | - | - | - | - | - | - | - |
+| [3.2.0](https://artifactory.kinovaapps.com:443/artifactory/generic-local-public/kortex/link6/3.2.0/link6-3.2.0-r.38.swu) | [release notes](https://artifactory.kinovaapps.com:443/artifactory/generic-documentation-public/Documentation/Link%206/Technical%20documentation/User%20Guide/EN-eRN-020-Link-6-release-notes.pdf) | [3.2.0](https://artifactory.kinovaapps.com/artifactory/generic-public/kortex/API/3.2.0/kortex_api-3.2.0.9-py3-none-any.whl) | - | - | - | - | - | - | - | - |
 
 </details>
 <a id="markdown-build-and-run-instructions" name="build-and-run-instructions"></a>
 
 # Build and Run instructions
 
-[Python API](./api_python/README.md) 
+[Python API](./api_python/README.md)
+
+[C++ API](./api_cpp/README.md) 
 
 <a id="markdown-reference" name="reference"></a>
 # Reference
